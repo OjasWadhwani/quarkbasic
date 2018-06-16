@@ -1,0 +1,20 @@
+html,
+body,
+header,
+.jarallax {
+  height: 100vh;
+}
+
+html,
+body,
+header,
+.intro-2 {
+  height: 800px;
+}
+.navbar-header{
+	text-align: center;
+	width: 100%;
+}
+.navbar-default .navbar-brand {
+	color: #d6d6d6;
+}
