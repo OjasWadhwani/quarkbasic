@@ -1,3 +1,10 @@
+
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%; 
+}
+
 html,
 body,
 header,
@@ -9,7 +16,10 @@ html,
 body,
 header,
 .intro-2 {
-  height: 800px;
+  height: 100%;
+}
+.intro-3{
+	height: 65%;
 }
 .navbar-header{
 	text-align: center;
@@ -18,3 +28,75 @@ header,
 .navbar-default .navbar-brand {
 	color: #d6d6d6;
 }
+.para{
+	height:35%; 
+}
+.maintitle2{
+	padding-top: 5%;
+}
+.techheading{
+	font-size: 200%;
+}
+.para{
+	padding-top: 3%;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="container para"] {
+        height: 700px;
+        padding-top: 10%;
+        font-size: 15px;
+        }
+    }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="techheading"] {
+        font-size: 30px;
+        }
+    }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="intro-3"] {
+        height: 1650px;
+        }
+    }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="navbar"] {
+        height: 80px;
+        }
+    }
+    .quark19{
+    	padding-top: 8%;
+    }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="quark19"] {
+        padding-top: 20%;
+        }
+    }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="maintitle"] {
+        font-size: 25px;
+        padding-top: 25%;
+        }
+    }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="maintitle2"] {
+        font-size: 10px;
+		padding-top:3%; 
+        }
+    }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="quarkimage"] {
+        height: 400px;
+	  }
+    }
+
+
+
+
+
