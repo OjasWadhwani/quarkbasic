@@ -32,3 +32,15 @@ a{
     background: #24355C;
   }
 }
+.img {
+    position: relative;
+    float: left;
+    width:  425px;
+    height: 425px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+.empty10{
+	height: 425px;
+}
