@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>Quark 19</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -100,8 +100,7 @@
 
                             <!-- Description -->
                             <h4 class="white-text my-4">Theme releasing soon</h4>
-                            <!-- <button type="button" class="btn btn-outline-white">Pre-Register</button> -->
-
+                            <button type="button" class="btn btn-outline-white" id="reg-btn" data-toggle="modal" data-target="#registerModal">Pre-Register</button>
                         </div>
 
                     </div>
@@ -234,32 +233,33 @@
                     <div class="col-lg-5 col-md-12">
 
                         <!-- Form contact -->
-                        <form class="p-5">
+                        <form class="p-5" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSf9OYDse9VNARHPERz8S-PeORIskufFxxKKQltzsvd6JL7HWQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 
                           <div class="md-form form-sm"> <i class="fa fa-user prefix grey-text"></i>
-                            <input type="text" id="form3" class="form-control form-control-sm">
+                            <input type="text" id="form3" name="entry.1134879371" class="form-control form-control-sm">
                             <label for="form3">Your name</label>
                           </div>
 
                           <div class="md-form form-sm"> <i class="fa fa-envelope prefix grey-text"></i>
-                            <input type="text" id="form2" class="form-control form-control-sm">
+                            <input type="text" id="form2" name="entry.699433632" class="form-control form-control-sm">
                             <label for="form2">Your email</label>
                           </div>
 
                           <div class="md-form form-sm"> <i class="fa fa-tag prefix grey-text"></i>
-                            <input type="text" id="form32" class="form-control form-control-sm">
+                            <input type="text" id="form32" name="entry.482128008" class="form-control form-control-sm">
                             <label for="form34">Subject</label>
                           </div>
 
                           <div class="md-form form-sm"> <i class="fa fa-pencil prefix grey-text"></i>
-                            <textarea type="text" id="form8" class="md-textarea form-control form-control-sm" rows="4"></textarea>
+                            <textarea type="text" id="form8" name="entry.1193636562" class="md-textarea form-control form-control-sm" rows="4"></textarea>
                             <label for="form8">Your message</label>
                           </div>
 
-                          <div class="text-center mt-4">
+                          
                             <button class="btn btn-primary">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
-                          </div>
+                         
                         </form>
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                         <!-- Form contact -->
 
                     </div>
@@ -316,6 +316,53 @@
         </div>
     </main>
     <!--Main layout-->
+        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form name="gform1" id="gform1" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeAbCU0gkVSyASRNK_E1aiJ2GwgkILcQrCr6kTMupcNOjF7Ig/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                    <div class="modal-header text-center">
+                        <h4 class="modal-title w-100 font-weight-bold">Fest Registration</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3">
+                        <div class="md-form mb-5">
+                            <i class="fa fa-user prefix grey-text"></i>
+                            <input type="text" id="form34" name="entry.1411906096" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="form34">Your name*</label>
+                        </div>
+
+                        <div class="md-form mb-5">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input type="email" id="form29" name="entry.66224155" class="form-control validate">
+                            <label data-error="Please enter valid email" data-success="right" for="form29">Your email*</label>
+                        </div>
+
+                        <div class="md-form mb-5">
+                            <i class="fa fa-university prefix grey-text"></i>
+                            <input type="text" id="form32" name="entry.2026589319" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="form32">College Name*</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-phone prefix grey-text"></i>
+                            <input type="text" id="form32" name="entry.1220155843" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="form8">Mobile number*</label>
+                        </div>
+                    <div class="reg-comp" style="display: none;">
+                        Registration Successfull!
+                    </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="submit" class="btn btn-unique">Register <i class="fa fa-paper-plane-o ml-1"></i></button>
+                    </div>
+                   
+                </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                </div>
+            </div>
+        </div>
 
     <!--Footer-->
     <footer class="page-footer font-small unique-color-dark pt-0">
@@ -369,7 +416,19 @@
         // Initialize maps
         google.maps.event.addDomListener(window, 'load', regular_map);
     </script>
-
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
+<script type="text/javascript">
+$('#gform1').on('submit', function(e) {
+  $(".md-form").css("display", "none");
+  $('.reg-comp').css("display", "block");
+  });
+</script>
     <!-- Carousel options -->
     <script>
         $('.carousel').carousel({
