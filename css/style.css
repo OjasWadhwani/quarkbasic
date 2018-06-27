@@ -44,3 +44,11 @@ a{
 .empty10{
 	height: 425px;
 }
+.qriosity {
+    background: url("../img/image1.jpeg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 900px;
+}
