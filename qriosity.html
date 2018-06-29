@@ -21,7 +21,8 @@
 
     <!-- Navbar brand -->
     <div class="navbar-header">
-        <a class="navbar-brand" href="#">Qriosity</a>
+                <a href="index.html" style="color: white"><i class="fa fa-home" aria-hidden="true" style="width: 50px;"></i></a>
+        <a class="navbar-brand" href="#">Quark 19 | Qriosity</a>
     </div>
     </nav>
 
@@ -106,45 +107,49 @@
                                 <B>Online:</B>
 
                                 <!-- Form contact -->
-                                <form class="p-5">
+                                <form class="p-5" name="gform1" id="gform1" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeAbCU0gkVSyASRNK_E1aiJ2GwgkILcQrCr6kTMupcNOjF7Ig/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 
                                     <div class="md-form form-sm"> 
                                         <i class="fa fa-user prefix grey-text"></i>
-                                        <input type="text" id="form3" class="form-control form-control-sm">
+                                        <input type="text" id="form3" name="entry.1411906096" class="form-control form-control-sm">
                                         <label for="form3">Your name</label>
                                     </div>
 
                                     <div class="md-form form-sm"> 
                                         <i class="fa fa-tag prefix grey-text"></i>
-                                        <input type="text" id="form2" class="form-control form-control-sm">
+                                        <input type="text" id="form2" name="entry.621715227" class="form-control form-control-sm">
                                         <label for="form2">Class</label>
                                     </div>
 
                                     <div class="md-form form-sm">
                                         <i class="fa fa-tag prefix grey-text"></i>
-                                        <input type="text" id="form32" class="form-control form-control-sm">
+                                        <input type="text" id="form32" name="entry.2026589319" class="form-control form-control-sm">
                                         <label for="form34">School/Coaching Center name</label>
                                     </div>
 
                                     <div class="md-form form-sm"> 
                                         <i class="fa fa-envelope prefix grey-text"></i>
-                                        <input type="text" id="form32" class="form-control form-control-sm">
+                                        <input type="text" id="form32" name="entry.66224155" class="form-control form-control-sm">
                                         <label for="form34">Email ID</label>
                                     </div>    
 
                                     <div class="md-form form-sm">
                                         <i class="fa fa-tag prefix grey-text"></i>
-                                        <input type="text" id="form32" class="form-control form-control-sm">
+                                        <input type="text" id="form32" name="entry.1220155843" class="form-control form-control-sm">
                                         <label for="form34">Phone No.</label>
                                     </div>
 
-                                    <div class="text-center mt-4">
-                                        <button class="btn btn-primary">
+                                    <div class="md-form text-center mt-4">
+                                        <button type="submit" class="btn btn-primary">
                                             Submit
                                             <i class="fa fa-paper-plane-o ml-1"></i>
                                         </button>
                                     </div>
+                                <div class="reg-comp" style="display: none; text-align: center;">
+                               <b> Registration Successfull!</b>
+                                </div>
                                 </form>
+                                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                                 <!-- Form contact -->
                             </li>
                         <hr class="my-5">
@@ -276,6 +281,15 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script type="text/javascript">var submitted=false;</script>
+
+<script type="text/javascript">
+$('#gform1').on('submit', function(e) {
+  $(".md-form").css("display", "none");
+  $('.reg-comp').css("display", "block");
+  });
+</script>
 </body>
 
 </html>
