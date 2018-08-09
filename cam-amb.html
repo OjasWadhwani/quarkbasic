@@ -61,31 +61,35 @@
                   <hr>
                 </div>
                 <!--Body-->
+		<form id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdPWmEjKwS-DLkwIgvK-yqlOP8ESZxjDFYZ86_RV-xOEg_rkQ/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
                 <div class="md-form">
                   <i class="fa fa-user prefix grey-text"></i>
-                  <input type="text" id="form3" class="form-control">
+                  <input type="text" id="form3" class="form-control" name="entry.928059208">
                   <label for="form3">Your name</label>
                 </div>
                 <div class="md-form">
                   <i class="fa fa-envelope prefix grey-text"></i>
-                  <input type="text" id="form2" class="form-control">
+                  <input type="text" id="form2" class="form-control" name="entry.1128733846">
                   <label for="form2">Your email</label>
                 </div>
                 <!--Textarea with icon prefix-->
                 <div class="md-form">
                   <i class="fa fa-pencil prefix grey-text"></i>
-                  <textarea type="text" id="form8" class="md-textarea form-control" rows="3"></textarea>
+                  <textarea type="text" id="form8" class="md-textarea form-control" rows="3" name="entry.201674353"></textarea>
                   <label for="form8">Your College</label>
                 </div>
                 <div class="md-form">
                   <i class="fa fa-phone prefix grey-text"></i>
-                  <input type="text" id="form2" class="form-control">
+                  <input type="text" id="form5" class="form-control" name="entry.988466824">
                   <label for="form2">Your contact</label>
                 </div>
                 <div class="text-center mt-3">
                   <button class="btn btn-indigo">Send</button>
-                  
+                 
                 </div>
+		</form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                        
               </div>
             </div>
             <!--/.Form-->
@@ -169,5 +173,12 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+			<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
 </body>
 </html>
