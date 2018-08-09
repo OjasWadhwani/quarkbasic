@@ -17,6 +17,13 @@ a{
     -o-background-size: cover;
     background-size: cover;
 }
+.view10 {
+    background: url('https://mdbootstrap.com/img/Photos/Others/images/89.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 .top-nav-collapse {
     background-color: #24355C;
@@ -51,4 +58,59 @@ a{
     -o-background-size: cover;
     background-size: cover;
     height: 900px;
+}
+
+/*Campus Ambassador Programme*/
+
+/* Required for full background image */
+
+html,
+body,
+header,
+.view10 {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view10 {
+    height: 1100px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view10 {
+    height: 700px;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #39448c !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #39448c !important;
+  }
+}
+
+h6 {
+  line-height: 1.7;
+}
+
+/*Sponsors*/
+.t19 {
+    background: url('img/twenty19.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
