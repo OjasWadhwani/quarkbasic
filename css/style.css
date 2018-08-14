@@ -79,12 +79,31 @@ header,
     height: 1100px;
   }
 }
-@media (min-width: 800px) and (max-width: 850px) {
-  html,
-  body,
-  header,
+
+@media (max-width: 990px) {
+  .content {
+    padding-top: 15%; 
+  }
+}
+@media (max-width: 750px) {
   .view10 {
-    height: 700px;
+    height: 1450px; 
+  }
+}
+@media (max-width: 400px) {
+  .view10 {
+    height: 1500px;
+  }
+}
+
+@media (max-width: 520px) {
+  .navfont {
+    font-size: 13px;
+  }
+}
+@media (max-width: 372px) {
+  .navfont {
+    font-size: 11px;
   }
 }
 
