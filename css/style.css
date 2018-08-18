@@ -29,7 +29,7 @@ a{
     background-color: #24355C;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   .navbar:not(.top-nav-collapse) {
     background: #24355C;
   }
@@ -63,7 +63,18 @@ a{
 /*Campus Ambassador Programme*/
 
 /* Required for full background image */
-
+.ben1{
+  
+  outline-style: solid; 
+  height: 270px; 
+  padding: 4%;
+}
+.ben2{
+  
+  outline-style: solid;
+  height: 270px; 
+  padding: 6%;
+}
 html,
 body,
 header,
@@ -76,7 +87,7 @@ header,
   body,
   header,
   .view10 {
-    height: 1100px;
+    height: 1200px;
   }
 }
 
@@ -85,12 +96,12 @@ header,
     padding-top: 15%; 
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 770px) {
   .view10 {
-    height: 1450px; 
+    height: 1600px; 
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 200px) {
   .view10 {
     height: 1500px;
   }
@@ -107,6 +118,16 @@ header,
   }
 }
 
+@media (max-width: 1200px) {
+  .ben1  {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1200px) {
+  .ben2 {
+    font-size: 13px;
+  }
+}
 .top-nav-collapse {
   background-color: #39448c !important;
 }
