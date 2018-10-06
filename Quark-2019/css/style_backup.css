@@ -1,0 +1,36 @@
+#menu{
+	margin: 0%;
+	width: 80%;
+	height: 1000px;
+	background-color: white;
+	-webkit-box-shadow: 0 0 5px 2px black;
+    -moz-box-shadow: 0 0 5px 2px black;
+    box-shadow: 0 0 5px 2px black;
+}
+#specials{
+	background-color: rgba(181, 159, 213, 1);
+}
+#electrify{
+	background-color:  rgba(252, 202, 120, 1);
+}
+#corporate{
+	background-color:  rgba(167, 253, 150, 1);
+}
+#roboficial{
+	background-color:  rgba(255, 128, 128, 1);
+}
+#programmersinc{
+	background-color: rgba(148, 207, 255, 1);
+}
+#matka{
+	background-color: rgba(255, 242, 122, 1);
+}
+#elixir{
+	background-color: rgba(255, 128, 232, 1);
+}
+#designandbuild{
+	background-color: rgba(106, 114, 220, 1);
+}
+#cubix{
+	background-color: rgba(106, 220, 171, 1);
+}

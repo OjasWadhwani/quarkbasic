@@ -1,0 +1,106 @@
+#menu{
+	margin: 0%;
+	width: 80%;
+	height: 1000px;
+	background-color: white;
+	-webkit-box-shadow: 0 0 5px 2px black;
+    -moz-box-shadow: 0 0 5px 2px black;
+    box-shadow: 0 0 5px 2px black;
+}
+#specials{
+	background-color: rgb(13, 13, 13);
+}
+#electrify{
+	background-color: rgb(13, 13, 13);
+}
+#corporate{
+	background-color: rgb(13, 13, 13);
+}
+#roboficial{
+	background-color: rgb(13, 13, 13);
+}
+#programmersinc{
+	background-color: rgb(13, 13, 13);
+}
+#matka{
+	background-color: rgb(13, 13, 13);
+}
+#elixir{
+	background-color: rgb(13, 13, 13);
+}
+#designandbuild{
+	background-color: rgb(13, 13, 13);
+}
+#cubix{
+	background-color: rgb(13, 13, 13);
+}
+.btn:hover {
+	font-size: 20px;
+}
+.reg:hover{
+	font-size: 13px;
+}
+.reg{
+	width: 20%;
+	position: absolute;
+	margin-left: 60%
+}
+#overlay_form
+{
+	display:none;
+	position: absolute;
+	height:100%;
+	width:100%;
+	background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+	text-align:center;
+}
+
+.formbox
+{	display:block;
+	position: relative;
+	margin:auto;
+	margin-top:2vw;
+	width:60vw;
+	background-color:white;
+	font-family:fontawesome;
+	font-size: 20px;
+}
+footer{
+	background-color: black;
+	color: white;
+	padding: 10px;
+}
+@media (max-width: 1000px) {
+  .reg {
+    font-size: 10px;
+   	padding: 5%;
+  }
+}
+@media (max-width: 825px) {
+  .reg {
+    font-size: 7px;
+   	padding: 3%;
+  }
+}
+@media (max-width: 400px) {
+  .reg {
+    font-size: 6px;
+   	padding: 2%;
+  }
+}
+@media (max-width: 1260px) {
+  #overlay_form {
+    height:900px;
+  }
+}
+@media (max-width: 991px) {
+  #overlay_form {
+    height: 1300px;
+  }
+}
+@media (max-width: 330px) {
+  #overlay_form {
+    height: 1500px;
+  }
+}
