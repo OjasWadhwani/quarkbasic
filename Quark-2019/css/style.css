@@ -103,4 +103,33 @@ footer{
   #overlay_form {
     height: 1500px;
   }
-}
+  #btn_reg{
+  	position: relative;
+  	font-size: 10px;
+  }
+  .regbtn{
+  	position: relative;
+  	margin-top: 15px;
+  }
+  #FullName{
+  	font-size: 10px;
+  }
+  #CollegeName{
+  	font-size: 10px;
+  }
+  #CollegePlace{
+  	font-size: 10px;
+  }
+  #Email{
+  	font-size: 10px;
+  }
+  #PhoneNumber{
+  	font-size: 10px;
+  }
+  #ReferralCode{
+  	font-size: 7px;
+  }
+  /*.form1{
+  	font-size: 1px;
+  }
+*/}
