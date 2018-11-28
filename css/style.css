@@ -231,3 +231,19 @@ a.effect-box:hover:before {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+
+@media (max-width: 577px) {
+  #register-workshops{
+    width: 150px;
+    height: 200px;
+    font-size: 10px;
+    padding: 17px;
+  }
+}
+@media (max-width: 577px) {
+  #register-events{
+    width: 150px;
+    height: 200px;
+    font-size: 10px;
+  }
+}
