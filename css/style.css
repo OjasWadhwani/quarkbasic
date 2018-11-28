@@ -64,15 +64,27 @@ a{
     background-size: cover;
     height: 900px;
 }
-#register{
+#register-events{
   display: block;
   position: absolute;
   margin-top: 15%;
-  margin-left: 25%;
   font-family: 'Audiowide';
   font-size: 25px; 
   border: 3px solid orange;
   padding: 17px;
+}
+
+#register-workshops{
+  width: 300px;
+  height: 115px;
+  display: inline-block;
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 0%;
+  font-family: 'Audiowide';
+  font-size: 25px; 
+  border: 3px solid orange;
+  padding-top: 17px;
 }
 
 
