@@ -29,6 +29,10 @@ $(function () {
             } else {
                 on();
                 toastr.success("Successfully Registered");
+                $("#btn_reg").removeAttr("disabled");
+                $("#FullName").val("");
+                $("#Email").val("");
+                $("#PhoneNumber").val("");
                 // setTimeout(() => {
                 //     window.location.reload();
                 // }, 1000);
