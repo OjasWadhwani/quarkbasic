@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Quark-2019</title>
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Font Audiowide-->
-	<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
-	<!-- Bootstrap core CSS -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Material Design Bootstrap -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css"
-	rel="stylesheet">	
-	<!-- Toaster -->
+	<title>
+		Events, Quark 2019
+	</title>
+	<!--Unicode declaration-->
+	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
-	<!-- Custom styles -->	
-	<link href="css/style.css" rel="stylesheet">
-</head>
-<body style="background-image: url(css/cogs-1.gif); font-family: 'Audiowide';">
-	<script>
-			function on() {
-			document.getElementById("SuccessBox").style.display = "block";
-			}
+
+	<!-- CSS-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/css/mdb.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	
-			function off() {
-				document.getElementById("SuccessBox").style.display = "none";
-			} 
-			function success() {
-				//if (alert('Successfully Registered!')) {}
-				//else window.location.reload();
-			}
-	</script>
+	<!--Audiowide font-->
+	<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+
+	
+</head>
+
+<body>
+		<script>
+				function on() {
+				document.getElementById("SuccessBox").style.display = "block";
+				}
+		
+				function off() {
+					document.getElementById("SuccessBox").style.display = "none";
+				} 
+				function success() {
+					//if (alert('Successfully Registered!')) {}
+					//else window.location.reload();
+				}
+		</script>
 
 		<!-- The Modal Register Box-->
 		<div class="modal fade" id="myModal"  >
@@ -40,35 +41,36 @@
 			<div class="modal-content">
 
 			  <!-- Modal Header -->
-			  <div class="modal-header">
-				<span style="font-weight:bold; text-align: center;">Register for the events, here !</span>
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <div class="modal-header" align="center">
+				<span style="font-weight:bold; text-align: center; font-size: 20px;">Register for the events, here !</span>
+				<button type="button" class="close" data-dismiss="modal" style="font-size: 35px;">&times;</button>
 			  </div>
 
 			  <!-- Modal body -->
 			  <div class="modal-body">
 				
-				<form class="text-center border border-light p-5 form1" style="overflow: scroll;">
-	
-						<input type="text" id="FullName" class="form-control" placeholder="Full Name">
+				<form class="text-center border border-light p-5 form1" ><!--  style="overflow: scroll;"> -->
+					<div align="center">
+						<input type="text" id="FullName" class="form-control" placeholder="Full Name" style="border: 1px solid black; width: 90%;">
 						<br>
-						<input type="text" id="CollegeName" class="form-control" placeholder="Name of College">
+						<input type="text" id="CollegeName" class="form-control" placeholder="Name of College" style="border: 1px solid black; width: 90%;">
 						<br>
-						<input type="text" id="CollegePlace" class="form-control" placeholder="Place of College">
+						<input type="text" id="CollegePlace" class="form-control" placeholder="Place of College" style="border: 1px solid black; width: 90%;">
 						<br>
 						<!-- E-mail -->
-						<input type="email" id="Email" class="form-control" placeholder="E-mail">
+						<input type="email" id="Email" class="form-control" placeholder="E-mail" style="border: 1px solid black; width: 90%;">
 						<!-- Phone number -->
 						<br>
-						<input type="text" id="PhoneNumber" class="form-control" placeholder="Phone number">
+						<input type="text" id="PhoneNumber" class="form-control" placeholder="Phone number" style="border: 1px solid black; width: 90%;">
 						<br>
-						<input type="text" id="ReferralCode" class="form-control" placeholder="Optional Referral Code">
+						<input type="text" id="ReferralCode" class="form-control" placeholder="Optional Referral Code" style="border: 1px solid black; width: 90%;">
 						<br>
+						</div>
 							<!-- TickBoxes -->
-						<div class="row">
+						<div class="row" style="padding-left: 5%; padding-right: 4%;">
 						
 							<div class="col-lg-3">
-								<div class="custom-control custom-checkbox" style="text-align:left; font-size:15px;">
+								<div class="custom-control custom-checkbox" style="text-align:left;">
 									<input type="checkbox" class="custom-control-input" id="evntchk-0">
 									<label id="label-evntchk-0" class="custom-control-label" for="evntchk-0">Paper Presentation</label>
 									<br>
@@ -208,7 +210,7 @@
 
 						</div>
 							<!-- Register button -->
-							<button type="button" class="btn btn-primary" id="btn_reg">
+							<button type="button" class="btn btn-primary" id="btn_reg" style="border: 2px solid black; font-size: 20px; margin-top: 30px;">
 								Register
 							</button>
 
@@ -226,1225 +228,934 @@
 			</div>
 		  </div>
 		</div>
+
+	<!--Side Nav Bar-->
+	<!-- <div id="mySidenav" class="sidenav">
+		<a href="#" class="homebtn"><span class="glyphicon glyphicon-home"></span></a>
+		<a href="#" class="closebtn" onclick="SidenavToggle();"><span class="glyphicon glyphicon-remove"></span></a>
+		<br>
+		<div class="list">
+			<ul>
+				<li><a href="#"><p class="sliding-middle-out">About</p></a></li>
+				<li><a href="#"><p class="sliding-middle-out">Events</p></a></li>
+				<li><a href="#"><p class="sliding-middle-out">Workshops</p></a></li>
+				<li><a href="#"><p class="sliding-middle-out">Team</p></a></li>
+			</ul>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<br>
 		
-	<div class="container-fluid">
+	</div> -->
+	
+
+	<!-- Main Container -->
+	<div class="container-fluid" id="main">
+
+		<!--Canvas for heading-->
+		<div class="headBackground">
+			<canvas id="stars"></canvas>	
+		</div>	
+
+		<!--Header-->
 		<div class="row">
-			<div class="col-lg-11" style="margin-left: 8vw">
-			&nbsp
-	<div class="row">
-
-		<div class="col-lg-3">
-				<div class="row">
-
-						<div class="col-lg-12">
-		
-							<!-- Card -->
-							<div class="card" id="specials">
-		
-							  <!-- Card image -->
-							  <img class="card-img-top" src="images/RoboClench.png" alt="Card image cap">
-		
-							  <!-- Card content -->
-							  <div class="card-body" style="color: white">
-		
-								<!-- Title -->
-								<h4 class="card-title" ><a><b>ROBOCLENCH</b></a></h4>
-								<!-- Text -->
-								<hr>
-		
-								<p class="card-text" style="font-size: 17px;">Teams have to build a remote controlled robot which can perform simple task of clenching objects. The bot has to put these objects in strategic places to complete the obstacle course. The bots can be wired or wireless. The wired bots should have a cable of length 2m at least so that the cables are in slack position at all times.</p>
-								<!-- Register -->
-								<hr>
-								<h5 style="">Category: Roboficial</h5>
-								<hr>
-								<h5>Schedule: TBA</h5>
-								<hr>
-		
-								<!--Rulebook-->
-								<div class="RulebookLink">
-									<a href="Rulebooks/ROBOCLENCH.pdf" target="_blank" >Know the rules. >>> </a>
-								</div>
-
-								<!--Dowloadables-->
-								<div class="RulebookLink">
-									<a href="downloadables/BotTheBuilder.STL" target="_blank" >Download 3D Model >>> </a>
-								</div>
-		
-								 <div style="text-align: center">
-									
-									<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-									  Register
-									</button>
-								</div>
-							  </div>
-		
-							</div>
-							<!-- Card -->
-							&nbsp
-		
-						</div>
-					</div>
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="specials">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/paperpresentation.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" ><a><b>PAPER PRESENTATION</b></a></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px;">We intend this to be an open platform for presenting innovative ideas through research papers and competing with peers in the field of engineering. We invite you to showcase your innovative ideas on this platform which will be judged by an experienced panel of Professors.</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Specials</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/SPECIALS.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-
-						 <div style="text-align: center">
-							
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-					  </div>
-
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
+			<div class="col-lg-12" >
+				<p class="heading" >EVENTS</p>
+				<a href="../index.html"><span class="glyphicon glyphicon-home" id="sidenavCog"> <!--onclick="SidenavToggle();"> --></span></a>
 			</div>
-			<div class="row">
+		</div>
 
+		<!--White line-->
+		<div class="row">
+			<div class="col-lg-12">
+				<hr class="divider" style="height:5px; color:white; background-color:white; border-radius: 20px; opacity: 0.8">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-5  btn btn-register headlinks" style="width:20%; color: white; font-size: 30px; border-radius: 20px; border: 1px solid white; text-align: center; margin-left: 20%; margin-right: 20%;" data-toggle="modal" data-target="#myModal">
+				Register
+			</div>
+			<div class="col-lg-5  btn btn-register headlinks" style="width:20%; color: white; font-size: 30px; border-radius: 20px; border: 1px solid white; text-align: center;">
+				<a href="downloadables/Rule Book.pdf" style="text-decoration: none; color: white">
+				Get the Rules
+				</a>
+			</div>
+		</div>
+
+		<!-- Events -->
+		<div class="event-container" >
+			<!-- Row-1 -->
+			<div class="row event-blocks">
 				<div class="col-lg-12">
-
+					<div class="col-lg-3 blocks-container">
+					<a href="#" style="text-decoration: none">
+						<div class="blocks" data-toggle="modal" data-target="#roboficial" style="background-image: url('images/roboficial.jpg');" >
+						
+								<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Roboficial</p>
 					
-
-					  <!-- Card -->
-					<div class="card" id="electrify" >
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/ucmania.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title"><a><b>µC MANIA</b></a></h4>
-						<hr>
-						<!-- Text -->
-						<p class="card-text" style="font-size: 17px;">The most favorite event Arduino Open is now µC Mania, and as the name implies, we’re open to any microcontroller you are comfortable with. So come and take part in this unique event and get to know more about your little friend.</p>
-
-						<hr>
-
-						<h5 style="">Category: Electrify</h5>
-						
-						<hr>
-						
-						<h5>Schedule: TBA</h5>
-						
-						<hr>
-
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/ELECTRIFY.pdf" target="_blank" >Know the rules. >>> </a>
 						</div>
-						
-						<!-- Register -->
-						<div style="text-align: center">
-							
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					  </div>
-
+					</a>
 					</div>
-					<!-- Card -->
-					&nbsp
+					<div class="col-lg-3 blocks-container">
+					<a href="#" style="text-decoration: none">
+						<div class="blocks" data-toggle="modal" data-target="#electrify" style="background-image: url('images/electrify.jpg');">
+							<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Electrify</p>
+						</div>
+					</a>
+					</div>
+					<div class="col-lg-3 blocks-container">
+					<a href="#" style="text-decoration: none">
+						<div class="blocks" data-toggle="modal" data-target="#corporate" style="background-image: url('images/corporate.jpg');">
+							<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Corporate</p>
+						</div>
+					</a>
+					</div>
+					<div class="col-lg-3 blocks-container">
+					<a href="#" style="text-decoration: none">
+						<div class="blocks"  data-toggle="modal" data-target="#designAndBuild" style="background-image: url('images/design%20and%20build.jpg');">
+							<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Design & Build</p>
+						</div>
+					</a>
+					</div>
 				</div>
 			</div>
+			<!-- Row-1 ends here -->
 
-			<div class="row">
+				
 
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="corporate">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/bullion%20beatdown.png" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" style="text-align: center; font-style:  bold;"><B><a>BULLION BEATDOWN</a></B></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px;">If you love and are good at negotiating, this event is for you. If you understand demand and supply, this event is for you. Show off your negotiations skills this quark!</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Corporate</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/CORPORATE.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-						
-					   <div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					  </div>
-
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="designandbuild">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/hangar_9.jpeg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" style="text-align: center; font-style:  bold;"><B><a>TRAILBLAZERS</a></B></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px; ">It’s a Remote Controlled Plane flying competition. Trailblazers has been one of the biggest crowd puller and entertainer over the years. Come join us this Quark to fly and achieve..</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Design & Build</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/DESIGN%20AND%20BUILD.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-
-					  <div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					  </div>
-
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="roboficial">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/Robowars.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" style="text-align: center; font-style:  bold;"><B><a>ROBOWARS</a></B></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px; ">One of the Flagship event of Quark’19 where two powerful bots will battle against each other to achieve the ultimate glory..</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Roboficial</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-
-						<div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-					  </div>
-
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="programmersinc">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/hackathon.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  	<div class="card-body" style="color: white">
-
-							<!-- Title -->
-							<h4 class="card-title" style="text-align: center; font-style:  bold;"><B><a>HACKATHON</a></B></h4>
-							<!-- Text -->
-							<hr>
-
-							<p class="card-text" style="font-size: 17px; ">A 24 hours theme based App and Web Development contest during Quark. Come in a team of 2-4 members to code, discuss, innovate and generate hacks.</p>
-							<!-- Register -->
-							<hr>
-							<h5 style="">Category: Programmer's Inc</h5>
-							<hr>
-							<h5>Schedule: TBA</h5>
-							<hr>
-
-							
-							
-							 <div style="text-align: center">
-								<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-								  Register
-								</button>
+			<!-- Row-2 -->
+			<div class="row event-blocks" >
+				<div class="col-lg-9 col-lg-offset-3">
+					<div class="col-lg-4 blocks-container">
+					<a href="#" style="text-decoration: none">
+							<div class="blocks" data-toggle="modal" data-target="#programmersInc" style="background-image: url('images/programming.jpg');">
+								<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Programmers' Inc</p>
 							</div>
-
-						</div>
-					<!-- Card -->
-					&nbsp
-
+						</a>
 					</div>
+
+					<div class="col-lg-4 blocks-container">
+					<a href="#" style="text-decoration: none">
+							<div class="blocks" data-toggle="modal" data-target="#specials" style="background-image: url('images/specials.jpg');">
+								<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Specials</p>
+							</div>
+					</a>
+					</div>
+					
 				</div>
 			</div>
+			<!-- Row-2 ends here -->
+
+			<!--Row 3 starts-->
+			<div class="row event-blocks">
+					<div class="col-lg-3 blocks-container">
+					<a href="#" style="text-decoration: none">
+						<div class="blocks" data-toggle="modal" data-target="#openShowcase" style="background-image: url('images/open%20showcase%20cover.jpg');">
+							<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Open Showcase</p>
+						</div>
+					</a>
+					</div>
+					<div class="col-lg-3 blocks-container">
+					<a href="#" style="text-decoration: none">
+						<div class="blocks" data-toggle="modal" data-target="#cubix" style="background-image: url('images/cubix%20cover.jpg');">
+							<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Cubix</p>
+						</div>
+					</a>
+					</div>
+					<div class="col-lg-3 blocks-container">
+					<a href="#" style="text-decoration: none">
+						<div class="blocks" data-toggle="modal" data-target="#elixir" style="background-image: url('images/elixir%20cover.jpg');">
+							<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Elixir</p>
+						</div>
+					</a>
+					</div>
+					<div class="col-lg-3 blocks-container">
+					<a href="#" style="text-decoration: none">
+						<div class="blocks" data-toggle="modal" data-target="#matka" style="background-image: url('images/matka%20cover.jpg');">
+							<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Matka</p>
+						</div>
+					</a>
+					</div>
+			</div>
+			<!--Row 3 ends-->
+
 		</div>
+		<!--Event container ends-->
 
-		<div class="col-lg-3">
-			<div class="row">
 
-				<div class="col-lg-12">
+		<footer>
+			<br>
+			<!--metainfo display-->
+			<div class="author">Created by:</div>
+			<!--social media plugins-->
+			<div class="socialMedia"></div>
+			<br>
+		</footer>
+	</div>
+	<!--Main ends here-->
 
-					<!-- Card -->
-					<div class="card" id="specials">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/open%20showcase.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-					   <!-- Title -->
-						<h4 class="card-title"><a><b>OPEN SHOWCASE</b></a></h4>
-						<hr>
-						<!-- Text -->
-						<p class="card-text" style="font-size: 17px;">
-							Open Showcase during Quark 2019 is a platform where you get to promulgate your projects and models, and make your amazing skills of design and innovation known to the world.
-						</p>
-						<hr>
-						<p class="card-text" >
-							Categories include :
-								<ul>
-									<span class="card-text">
-										<li>Mechanical and Chemical Engineering</li>
-										<li>Electrical, Instrumentation and Computer Science</li>
-										<li>Sciences</li>
-									</span>
-								</ul>
-						</p>
-
-						<hr>
-
-						<h5 style="">Category: Special</h5>
-						
-						<hr>
-						
-						<h5>Schedule: TBA</h5>
-						<br>
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/OPEN%20SHOWCASE%202019.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-						<hr>
-						<!-- Register -->
-						<div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					  </div>
+		<!-- Roboficial Modal -->
+		<div class="modal fade" id="roboficial" >
+			<div class="modal-dialog modal-dialog-centered" >
+				<div class="modal-content">
+				
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Roboficial</h4>
 					</div>
-					<!-- Card -->
-					&nbsp
-				</div>
-			</div>
-			<div class="row">
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+						<ul class="nav nav-tabs">
+								<li class="active"><a data-toggle="tab" href="#roboclench">Roboclench</a></li>
+								<li><a data-toggle="tab" href="#robowars">Robowars</a></li>
+								<li><a data-toggle="tab" href="#robosoccer">Robosoccer</a></li>
+								<li><a data-toggle="tab" href="#roborace">Roborace</a></li>
+								<li><a data-toggle="tab" href="#lineFollowingBot">Line Following Bot</a></li>
+						</ul>
+							
+						<div class="tab-content">
+							<div id="roboclench" class="tab-pane fade in active">
+								<h3>Roboclench</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+									<p>Teams have to build a remote controlled robot which can perform simple task of clenching objects. The bot has to put these objects in strategic places to complete the obstacle course. The bots can be wired or wireless. The wired bots should have a cable of length 2m at least so that the cables are in slack position at all times.
+									</p>
+									<a href="downloadables/BotTheBuilder.STL"><h4><B>Download 3D Model>></B></h4></a>
+									</div>
 
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="electrify">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/digilogica.gif" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title"><a><b>DIGILOGICA</b></a></h4>
-						<hr>
-						<!-- Text -->
-						<p class="card-text" style="font-size: 17px;">
-							Do you think that Digital Design is just a boring course just about gates and logic? Well you’re in for a huge surprise! Welcome to the vast world of digital logic! Get ready to go beyond with counters, multiplexers, flip flops, encoders, decoders and much more and be prepared to be challenged at a whole new level!
-						</p>
-						<hr>
-						<h5 style="">Category: Electrify</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/ELECTRIFY.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-						
-						<!-- Register -->
-							<div style="text-align: center">
-								<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-									Register
-								</button>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/RoboClench.png" width="100%">
+									</div>
+								
+								</div>
+							</div>
+							<div id="robowars" class="tab-pane fade in">
+								<h3>Robowars</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+										<p>One of the Flagship event of Quark'19 where two powerful bots will battle against each other to achieve the ultimate glory.
+									</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/Robowars.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
+							<div id="robosoccer" class="tab-pane fade in">
+									<h3>Robosoccer</h3>
+									<!--Event info-->
+									<div class="row">
+										<div class="col-lg-7">
+											<p>Fan of football? Or Robotics? Or Both? This is the event for you. Participate to compete against some of the best in this business.
+										</p>
+										</div>
+								
+										<!--Event pic-->
+										<div class="col-lg-5">
+											<img src="images/Robo Soccer.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
+							<div id="roborace" class="tab-pane fade in">
+								<h3>Roborace</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+										<p>Interested in Bots and racing? Come join us this Quark to traverse through the track full of turns and obstacles in minimum possible time.
+										</p>
+										<a href="downloadables/roborace3dmodels.zip"><h4><B>Download 3D Model>></B></h4></a>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/Roborace.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
+							<div id="lineFollowingBot" class="tab-pane fade in">
+								<h3>Line Following Bot</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+										<p>An autonomous robot has to follow black lines on a white background and survive different twists and turns to reach the finishing point in minimum time.
+										</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/Line following Bot.jpg" width="100%">
+									</div>
+								
+								</div>
 							</div>
 						</div>
 					</div>
-					<!-- Card -->
-					&nbsp
+				
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary btn-inverse" data-dismiss="modal" style="color: black;">Close</button>
+				</div>
+				
 				</div>
 			</div>
-
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="corporate">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/Market%20Kshetra.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title"><a><b>MARKET KSHETRA</b></a></h4>
-						<hr>
-						<!-- Text -->
-						<p class="card-text" style="font-size: 17px;">Market Kshetra is a 6 hours long growth hackathon. And it requires no coding. Participants will be given an existing business model. They have to study marketing strategy deployed by the business. In the six-hour long competition, they have to identify the problems of the existing marketing structure and propose new and innovative marketing strategies that will significantly the outreach of their products</p>
-						<hr>
-
-						<h5 style="">Category: Corporate</h5>
-						
-						<hr>
-						
-						<h5>Schedule: TBA</h5>
-						
-						<hr>
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/CORPORATE.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-						
-						<!-- Register -->
-					  <div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					  </div>
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="designandbuild">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/burnout.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" style="text-align: center; font-style:  bold;"><B><a>BURNOUT</a></B></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px; ">Interested in Remote Controlled Cars? BITS Pilani Goa campus presents to you Burnout this Quark! Race your cars and win whooping cash prizes. Race through the twisted tracks and obstacles to achieve the title.</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Design & Build</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/DESIGN%20AND%20BUILD.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-						
-					  <div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					</div>
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="roboficial">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/Robo%20Soccer.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" style="text-align: center; font-style:  bold;"><B><a>ROBOSOCCER</a></B></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px; ">Fan of football? Or Robotics? Or Both? This is the event for you. Participate to compete against some of the best in this business.</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Roboficial</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-
-						<div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					</div>
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="programmersinc">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/codejam.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" style="text-align: center; font-style:  bold;"><B><a>CODEJAM</a></B></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px; ">Do you believe not just in writing code but making it more efficient? If yes, this event is for you. Quark present to you a competitive programming event. Rack your brains to solve puzzles and real world problems. Compete with people all across the nation and show off your programming skills.</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Programmer's Inc</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/PROGRAMMERS%20INC.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-						
-					   <div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-					</div>
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
-			</div>
-
 		</div>
 
-		<div class="col-lg-3">
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="specials">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/schoolbag.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title"><a><b>SCHOOLBAGS</b></a></h4>
-						<hr>
-						<!-- Text -->
-						<p class="card-text" style="font-size: 17px;">Schoolbag is a mixed bag of events, interactive sessions and workshops, or Guest talks, designed for the participation of students of Secondary and Higher Secondary Schools. The competition promote education and learning of our young minds and nurture the potential within them. We plan to have a quiz, debate and a science fair as part of this conglomeration, in separate categories for secondary and higher secondary schools.</p>
-
-						<hr>
-
-						<h5 style="">Category: Special</h5>
-						
-						<hr>
-						
-						<h5>Schedule: TBA</h5>
-						
-						<hr>
-
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/SPECIALS.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-
-						<!-- Register -->
-					   <div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					  </div>
-
+		<!-- Electrify Modal -->
+		<div class="modal fade" id="electrify">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+				
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Electrify</h4>
 					</div>
-					<!-- Card -->
-					&nbsp
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+						<ul class="nav nav-tabs">
+								<li class="active"><a data-toggle="tab" href="#digilogica">Digilogica</a></li>
+								<li><a data-toggle="tab" href="#ucMania">μC MANIA</a></li>
+						</ul>
+							
+						<div class="tab-content">
+							<div id="digilogica" class="tab-pane fade in active">
+								<h3>Digilogica</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+									<p>Do you think that Digital Design is just a boring course just about gates and logic? Well you’re in for a huge surprise! Welcome to the vast world of digital logic! Get ready to go beyond with counters, multiplexers, flip flops, encoders, decoders and much more and be prepared to be challenged at a whole new level! 
+									</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/digilogica.gif" width="100%">
+									</div>
+								
+								</div>
+							</div>
+							<div id="ucMania" class="tab-pane fade in">
+								<h3>μC MANIA</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+										<p>The most favorite event Arduino Open is now µC Mania, and as the name implies, we're open to any microcontroller you are comfortable with. So come and take part in this unique event and get to know more about your little friend.
+									</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/ucmania.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary btn-inverse" data-dismiss="modal" style="color: black;">Close</button>
 				</div>
-
+				
+				</div>
 			</div>
-			<div class="row">
+		</div>
 
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="elixir">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/Quark%20National%20Quiz.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" style="text-align: center;"><B><a>ELIXIR</a></B></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px; ">Interested in Quizzing? Or want to get your mind blown? Here’s the hack!! Quark’19 brings to you its two major quizzing competitions.
+		<!-- Corporate Modal -->
+		<div class="modal fade" id="corporate">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+					
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Corporate</h4>
+						</div>
 						
-							<ul>
-								<span class="card-text">
-									<li>Quark National Quiz (Based on Science, Technology and Business)</li>
-									<li>Ganimatoonics (Based on Games, Anime, Cartoons and Comics)</li>
-								</span>
+						<!-- Modal body -->
+						<div class="modal-body">
+							<ul class="nav nav-tabs">
+									<li class="active"><a data-toggle="tab" href="#bullionBeatdown">Bullion Beatdown</a></li>
+									<li><a data-toggle="tab" href="#marketKshetra">Market Kshetra</a></li>
+									<li><a data-toggle="tab" href="#alphaTickers">Alpha Tickers</a></li>
+									<li><a data-toggle="tab" href="#novatia">Novatia</a></li>
+									<li><a data-toggle="tab" href="#adMadShow">The Ad Mad Show</a></li>
 							</ul>
-						</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Elixir</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/ELIXIR.pdf" target="_blank" >Know the rules. >>> </a>
+								
+							<div class="tab-content">
+								<div id="bullionBeatdown" class="tab-pane fade in active">
+									<h3>Bullion Beatdown</h3>
+									<!--Event info-->
+									<div class="row">
+										<div class="col-lg-7">
+										<p>If you love and are good at negotiating, this event is for you. If you understand demand and supply, this event is for you. Show off your negotiations skills this quark!
+										</p>
+										</div>
+								
+										<!--Event pic-->
+										<div class="col-lg-5">
+											<img src="images/bullion%20beatdown.png" width="100%">
+										</div>
+									
+									</div>
+								</div>
+								<div id="marketKshetra" class="tab-pane fade in">
+									<h3>Market Kshetra</h3>
+									<!--Event info-->
+									<div class="row">
+										<div class="col-lg-7">
+											<p>Market Kshetra is a 6 hours long growth hackathon. And it requires no coding. Participants will be given an existing business model. They have to study marketing strategy deployed by the business. In the six-hour long competition, they have to identify the problems of the existing marketing structure and propose new and innovative marketing strategies that will significantly the outreach of their products
+										</p>
+										</div>
+								
+										<!--Event pic-->
+										<div class="col-lg-5">
+											<img src="images/Market%20Kshetra.jpg" width="100%">
+										</div>
+									
+									</div>
+								</div>
+								<div id="alphaTickers" class="tab-pane fade in">
+										<h3>Alpha Ticker</h3>
+										<!--Event info-->
+										<div class="row">
+											<div class="col-lg-7">
+												<p>Alpha males are the leaders of the pack. The one’s who take initiatives and inspire everyone in their surrounding with their drive and ethic. And CEO’s are the important cogs in the machine that make businesses tick. So, this Quark we give you the chance to show case you have it in you lead the charge of a multinational company- to show that you can be an ALPHA TICKER!
+											</p>
+											</div>
+									
+											<!--Event pic-->
+											<div class="col-lg-5">
+												<img src="images/Alpha%20Tickers.jpg" width="100%">
+										</div>
+									
+									</div>
+								</div>
+								<div id="novatia" class="tab-pane fade in">
+									<h3>Novatia</h3>
+									<!--Event info-->
+									<div class="row">
+										<div class="col-lg-7">
+											<p>Novatia is a national level B-Plan competition where teams from premier colleges of India present their models to a panel of investors. Novatia will provide a platform for outfitted and ascendable business plans to win cash prizes, receive funding, mentorship from its partner incubators and accelerators.
+											</p>
+										</div>
+								
+										<!--Event pic-->
+										<div class="col-lg-5">
+											<img src="images/Novatia.jpg" width="100%">
+										</div>
+									
+									</div>
+								</div>
+								<div id="adMadShow" class="tab-pane fade in">
+									<h3>The Ad Mad Show</h3>
+									<!--Event info-->
+									<div class="row">
+										<div class="col-lg-7">
+											<p>Bring out the creativity inside you and make an amazing advertisement of your own. Be it hilarious or sensitive, be it just your creativity and ad sense.
+											</p>
+										</div>
+								
+										<!--Event pic-->
+										<div class="col-lg-5">
+											<img src="images/Ad%20Mad%20Show.jpg" width="100%">
+										</div>
+									
+									</div>
+								</div>
+							</div>
 						</div>
-
-					  <div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					  </div>
-
+					
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary btn-inverse" data-dismiss="modal" style="color: black;">Close</button>
 					</div>
-					<!-- Card -->
-					&nbsp
+					
+					</div>
 				</div>
 			</div>
-
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="corporate">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/Alpha%20Tickers.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title"><a><b>ALPHA TICKERS</b></a></h4>
-						<hr>
-						<!-- Text -->
-						<p class="card-text" style="font-size: 17px;">Alpha males are the leaders of the pack. The one’s who take initiatives and inspire everyone in their surrounding with their drive and ethic. And CEO’s are the important cogs in the machine that make businesses tick. So, this Quark we give you the chance to show case you have it in you lead the charge of a multinational company- to show that you can be an ALPHA TICKER!</p>
-						<hr>
-
-						<h5 style="">Category: Corporate</h5>
-						
-						<hr>
-						
-						<h5>Schedule: TBA</h5>
-						
-						<hr>
-
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/CORPORATE.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-
-						<!-- Register -->
-					 <div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					  </div>
-
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="designandbuild">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/Mortar Kombat.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" style="text-align: center; font-style:  bold;"><B><a>MORTAR KOMBAT</a></B></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px; ">Did the name catch your attention? Yes, we bring to you ultimate competition of designing and building a spud gun to shoot at different targets and win the combat.</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Design & Build</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/DESIGN%20AND%20BUILD.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-
-						<div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					  </div>
-
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="roboficial">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/Roborace.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" style="text-align: center;"><B><a>ROBORACE</a></B></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px; ">Interested in Bots and racing? Come join us this Quark to traverse through the track full of turns and obstacles in minimum possible time.</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Roboficial</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-
-						<!--Dowloadables-->
-						<div class="RulebookLink">
-							<a href="downloadables/roborace3dmodels.zip" target="_blank" >Download 3D Models >>> </a>
-						</div>
-
-					 <div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					  </div>
-
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="programmersinc">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/ctf.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" style="text-align: center; font-style:  bold;"><B><a>BITS CAPTURE THE FLAG</a></B></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px; ">Bits CTF is a computer security contest targeted at anyone with an interest in computer science. The game consists of a series of challenges where participants must reverse engineer, break, hack, decrypt, or do whatever it takes to solve them. Duration: 48 hours.</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Programmer's Inc</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/PROGRAMMERS%20INC.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-						
-					  <div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					  </div>
-
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
-			</div>
-
-		</div>
-
-		<div class="col-lg-3">
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="matka">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/MATKA.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" style="text-align: center; font-style:  bold;"><B><a>MATKA</a></B></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px; ">MATKA, credited with being one of the biggest National Gaming Competitions witnesses India’s best gamers compete in the battle for the coveted title of The Godlike Gamer. MATKA has always been one of the highlights of the festival. Join us to compete against some of India’s best gaming clans on the Quark console.</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Matka</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/MATKA.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-						
-					 <div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					  </div>
-
-					</div>
-					<!-- Card -->
-					&nbsp
-				</div>
-
-			</div>
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="cubix">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/CUBIX.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" style="text-align: center; font-style:  bold;"><B><a>CUBIX</a></B></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px; ">One of the biggest Cubing Challenges in India, has following major competitions:</p>
-						<p>
-							<ul> 
-								<span class="card-text">
-									<li>2x2</li>
-									<li>3x3</li>
-									<li>4x4</li>
-									<li>5x5</li>
-									<li>3x3 One Handed</li>
-									<li>3x3 Blind Folded</li>
-									<li>Pyraminx</li>
-								</span>
-							</ul>
-						</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Cubix</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/CUBIX.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-						
-					   <div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-					  </div>
-
-					</div>
-					<!-- Card -->
-					&nbsp
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="corporate">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/Novatia.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title"><a><b>NOVATIA</b></a></h4>
-						<hr>
-						<!-- Text -->
-						<p class="card-text" style="font-size: 17px;">Novatia is a national level B-Plan competition where teams from premier colleges of India present their models to a panel of investors. Novatia will provide a platform for outfitted and ascendable business plans to win cash prizes, receive funding, mentorship from its partner incubators and accelerators.</p>
-						<hr>
-
-						<h5 style="">Category: Corporate</h5>
-						
-						<hr>
-						
-						<h5>Schedule: TBA</h5>
-						
-						<hr>
-						
-						
-						<!-- Register -->
-					   <div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-					  </div>
-
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="corporate">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/Ad%20Mad%20Show.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" style="text-align: center; font-style:  bold;"><B><a><b>THE AD MAD SHOW</b></a></B></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px; ">Bring out the creativity inside you and make an amazing advertisement of your own. Be it hilarious or sensitive, be it just your creativity and ad sense.</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Corporate</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/CORPORATE.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-						
-						<div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					  </div>
-
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="roboficial">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/Line%20following%20Bot.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" style="text-align: center; font-style:  bold;"><B><a><b>LINE FOLLOWING BOT</b></a></B></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px; ">An autonomous robot has to follow black lines on a white background and survive different twists and turns to reach the finishing point in minimum time.</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Roboficial</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-
-						<div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					  </div>
-
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-12">
-
-					<!-- Card -->
-					<div class="card" id="programmersinc">
-
-					  <!-- Card image -->
-					  <img class="card-img-top" src="images/reverse.jpg" alt="Card image cap">
-
-					  <!-- Card content -->
-					  <div class="card-body" style="color: white">
-
-						<!-- Title -->
-						<h4 class="card-title" style="text-align: center; font-style:  bold;"><B><a><b>REVERSE CODING</b></a></B></h4>
-						<!-- Text -->
-						<hr>
-
-						<p class="card-text" style="font-size: 17px;">This event will push your logical, deductive and mathematical skills to the limits. Be the Bond of programming and figure out what is the hidden source code by looking at its behaviour on your inputs.</p>
-						<!-- Register -->
-						<hr>
-						<h5 style="">Category: Programmer's Inc</h5>
-						<hr>
-						<h5>Schedule: TBA</h5>
-						<hr>
-
-						<!--Rulebook-->
-						<div class="RulebookLink">
-							<a href="Rulebooks/PROGRAMMERS%20INC.pdf" target="_blank" >Know the rules. >>> </a>
-						</div>
-						
-
-					   <div style="text-align: center">
-							<button type="button" class="btn btn-register" data-toggle="modal" data-target="#myModal">
-							  Register
-							</button>
-						</div>
-
-					  </div>
-
-					</div>
-					<!-- Card -->
-					&nbsp
-
-				</div>
-			</div>
-
-		</div>
 
 		
+		</div>
+		
+		<!-- Design & Build Modal -->
+		<div class="modal fade" id="designAndBuild">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+				
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Design & Build</h4>
+					</div>
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+						<ul class="nav nav-tabs">
+								<li class="active"><a data-toggle="tab" href="#trailblazers">Trailblazers</a></li>
+								<li><a data-toggle="tab" href="#burnout">Burnout</a></li>
+								<li><a data-toggle="tab" href="#mortarKombat">Mortar Kombat</a></li>
+						</ul>
+							
+						<div class="tab-content">
+							<div id="trailblazers" class="tab-pane fade in active">
+								<h3>Trailblazers</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+									<p>It’s a Remote Controlled Plane flying competition. Trailblazers has been one of the biggest crowd puller and entertainer over the years. Come join us this Quark to fly and achieve..
+									</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/trailblazers.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
+							<div id="burnout" class="tab-pane fade in">
+								<h3>Burnout</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+										<p>Interested in Remote Controlled Cars? BITS Pilani Goa campus presents to you Burnout this Quark! Race your cars and win whooping cash prizes. Race through the twisted tracks and obstacles to achieve the title.
+									</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/burnout.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
+							<div id="mortarKombat" class="tab-pane fade in">
+								<h3>Mortar Kombat</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+										<p>Did the name catch your attention? Yes, we bring to you ultimate competition of designing and building a spud gun to shoot at different targets and win the combat.
+										</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/Mortar%20Kombat.jpg" width="100%">
+									</div>
+							
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary btn-inverse" data-dismiss="modal" style="color: black;">Close</button>
+				</div>
+				
+				</div>
+			</div>
+		</div>
 
-	</div>
+		<!-- Programmers' Inc Modal -->
+		<div class="modal fade" id="programmersInc">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+				
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Programmers' Inc</h4>
+					</div>
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+						<ul class="nav nav-tabs">
+								<li class="active"><a data-toggle="tab" href="#hackathon">Hackathon</a></li>
+								<li><a data-toggle="tab" href="#codejam">Codejam</a></li>
+								<li><a data-toggle="tab" href="#ctf">BITS CTF</a></li>
+								<li><a data-toggle="tab" href="#reverseCoding">Reverse Coding</a></li>
+						</ul>
+							
+						<div class="tab-content">
+							<div id="hackathon" class="tab-pane fade in active">
+								<h3>Hackathon</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+									<p>A 24 hours theme based App and Web Development contest during Quark. Come in a team of 2-4 members to code, discuss, innovate and generate hacks.
+									</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/hackathon.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
+							<div id="codejam" class="tab-pane fade in">
+								<h3>Codejam</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+										<p>Do you believe not just in writing code but making it more efficient? If yes, this event is for you. Quark present to you a competitive programming event. Rack your brains to solve puzzles and real world problems. Compete with people all across the nation and show off your programming skills.
+										</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/codejam.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
+							<div id="ctf" class="tab-pane fade in">
+									<h3>BITS Capture The Flag</h3>
+									<!--Event info-->
+									<div class="row">
+										<div class="col-lg-7">
+											<p>Bits CTF is a computer security contest targeted at anyone with an interest in computer science. The game consists of a series of challenges where participants must reverse engineer, break, hack, decrypt, or do whatever it takes to solve them. Duration: 48 hours.
+										</p>
+										</div>
+								
+										<!--Event pic-->
+										<div class="col-lg-5">
+											<img src="images/ctf.jpg" width="100%">
+										</div>
+								
+									</div>
+							</div>
+							<div id="reverseCoding" class="tab-pane fade in">
+								<h3>Reverse Coding</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+										<p>This event will push your logical, deductive and mathematical skills to the limits. Be the Bond of programming and figure out what is the hidden source code by looking at its behaviour on your inputs.
+										</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/reverse.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
+						
+						</div>
+					</div>
+				
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary btn-inverse" data-dismiss="modal" style="color: black;">Close</button>
+				</div>
+				
+				</div>
+			</div>
+		</div>
 
-	</div>
-	</div>
-</div>
+		<!-- Specials' Modal -->
+		<div class="modal fade" id="specials">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+				
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Specials</h4>
+					</div>
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+						<ul class="nav nav-tabs">
+								<li class="active"><a data-toggle="tab" href="#paperPresentation">Paper Presentation</a></li>
+								<li><a data-toggle="tab" href="#stratazenith">Stratazenith</a></li>
+								<li><a data-toggle="tab" href="#schoolBags">School Bags</a></li>
+						</ul>
+							
+						<div class="tab-content">
+							<div id="paperPresentation" class="tab-pane fade in active">
+								<h3>Paper Presentation</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+									<p>We intend this to be an open platform for presenting innovative ideas through research papers and competing with peers in the field of engineering. We invite you to showcase your innovative ideas on this platform which will be judged by an experienced panel of Professors.
+									</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/paperpresentation.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
+							<div id="stratazenith" class="tab-pane fade in">
+								<h3>Stratazenith</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+										<p>Organised by "The Indian Game Theory Society", it is an on spot strategy based event where common sense is your best friend. Participants don't need to have any prior knowledge to participate in the event. It is a team event comprising of 2 to 3 members.
+										</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/stratazenith.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
+							<div id="schoolBags" class="tab-pane fade in">
+									<h3>School Bags</h3>
+									<!--Event info-->
+									<div class="row">
+										<div class="col-lg-7">
+											<p>Schoolbag is a mixed bag of events, interactive sessions and workshops, or Guest talks, designed for the participation of students of Secondary and Higher Secondary Schools. The competition promote education and learning of our young minds and nurture the potential within them. We plan to have a quiz, debate and a science fair as part of this conglomeration, in separate categories for secondary and higher secondary schools.
+										</p>
+										</div>
+								
+										<!--Event pic-->
+										<div class="col-lg-5">
+											<img src="images/schoolbag.jpg" width="100%">
+										</div>
+								
+									</div>
+							</div>
+						
+						</div>
+					</div>
+				
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary btn-inverse" data-dismiss="modal" style="color: black;">Close</button>
+				</div>
+				
+				</div>
+			</div>
+		</div>
 
-<footer style="text-align:center">
-	For more info, contact: anjal@bits-quark.org
-	<br>
-	<a href="http://bits-quark.org" >Visit Quark Website</a>
-</footer>
+		<!-- Open Showcase Modal -->
+		<div class="modal fade" id="openShowcase">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+				
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Open Showcase</h4>
+					</div>
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="tab-content">
+							<div id="openShowcase" class="tab-pane fade in active">
+								<h3>Open Showcase</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+									<p>Open Showcase during Quark 2019 is a platform where you get to promulgate your projects and models, and make your amazing skills of design and innovation known to the world. Categories include:
+										<ul>
+											<li> > Mechanical and Chemical Engineering</li>
+											<li> > Electrical, Instrumentation & Computer Science</li>
+											<li> > General Sciences</li>
+										</ul>
+									</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/open%20showcase.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary btn-inverse" data-dismiss="modal" style="color: black;">Close</button>
+				</div>
+				
+				</div>
+			</div>
+		</div>
 
-	<!-- SCRIPTS -->
+		<!-- Cubix Modal -->
+		<div class="modal fade" id="cubix">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+				
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Cubix</h4>
+					</div>
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="tab-content">
+							<div id="cubix" class="tab-pane fade in active">
+								<h3>Cubix</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+									<p>One of the biggest Cubing Challenges in India, has following major competitions:
+										<ul>
+											<li> > 2x2</li>
+											<li> > 3x3</li>
+											<li> > 4x4</li>
+											<li> > 5x5</li>
+											<li> > 3x3 One Handed</li>
+											<li> > 3x3 Blind Folded</li>
+											<li> > Pyraminx</li>
+										</ul>
+									</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/CUBIX.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary btn-inverse" data-dismiss="modal" style="color: black;">Close</button>
+				</div>
+				
+				</div>
+			</div>
+		</div>
+
+		<!-- Elixir Modal -->
+		<div class="modal fade" id="elixir">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+				
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Elixir</h4>
+					</div>
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="tab-content">
+							<div id="elixir" class="tab-pane fade in active">
+								<h3>Elixir</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+									<p>Interested in Quizzing? Or want to get your mind blown? Here’s the hack!! Quark’19 brings to you its two major quizzing competitions. 
+										<ul>
+											<li> > Quark National Quiz (Based on Science, Technology and Business)</li>
+											<li> > Ganimatoonics (Based on Games, Anime, Cartoons and Comics)</li>
+										</ul>
+									</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/elixir.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary btn-inverse" data-dismiss="modal" style="color: black;">Close</button>
+				</div>
+				
+				</div>
+			</div>
+		</div>
+
+		<!-- Matka Modal -->
+		<div class="modal fade" id="matka">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+				
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Matka</h4>
+					</div>
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="tab-content">
+							<div id="matka" class="tab-pane fade in active">
+								<h3>Matka</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+									<p>MATKA, credited with being one of the biggest National Gaming Competitions witnesses India’s best gamers compete in the battle for the coveted title of The Godlike Gamer. MATKA has always been one of the highlights of the festival. Join us to compete against some of India’s best gaming clans on the Quark console.
+									</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/MATKA.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary btn-inverse" data-dismiss="modal" style="color: black;">Close</button>
+				</div>
+				
+				</div>
+			</div>
+		</div>
+
+<!-- MDB JQuery-->	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/js/mdb.min.js"></script>
+
+<!-- Firebase scripts -->
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-functions.js"></script>
+
+<!--Events Heading canvas script-->
+<script src='http://requirejs.org/docs/release/2.1.15/minified/require.js'></script>
+<script src='https://rawgit.com/ironwallaby/delaunay/master/delaunay.js'></script>
+<script src="script/stars.js"></script>
+
+<!-- General Script -->
+<script type="text/javascript" src="script/script.js"></script>
+
+<!-- Firebase initialization script-->
+<script src="scripts/firebase_init.js"></script>
 	
-	<!-- JQuery -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- Toaster -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-	<!-- Bootstrap tooltips -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-	<!-- Bootstrap core JavaScript -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<!-- MDB core JavaScript -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
-	<!-- Firebase scripts -->
-	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-functions.js"></script>
-
-	<!-- Firebase initialization script-->
-	<script src="scripts/firebase_init.js"></script>
+<!--Include user defined scripts here-->
+<script type="text/javascript" src="scripts/index.js"></script>	
 	
-	<!--Include user defined scripts here-->
-	<script type="text/javascript" src="scripts/index.js"></script>	
 </body>
 </html>
