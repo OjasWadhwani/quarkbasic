@@ -280,6 +280,9 @@ li{
 }
 @media (max-width: 1200px) {
   .headlinks {
-    margin-left: 22%;
+  	margin-top: 5%;
+  	margin-bottom: 1%;
+    margin-left: 30%;
+    margin-right: 30%;
   }
 }
