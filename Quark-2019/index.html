@@ -167,15 +167,15 @@
 										<label id="label-evntchk-17" class="custom-control-label" for="evntchk-17">RoboSoccer</label>
 										<br>
 									</div>
-									
-							</div> 
-							
-							<div class="col-lg-3">
 								<div class="custom-control custom-checkbox" style="text-align:left; font-size:15px;">
 									<input type="checkbox" class="custom-control-input" id="evntchk-18">
 									<label id="label-evntchk-18" class="custom-control-label" for="evntchk-18">RoboRace</label>
 									<br>
-								</div>
+								</div>									
+							</div> 
+							
+							<div class="col-lg-3">
+
 								<div class="custom-control custom-checkbox" style="text-align:left; font-size:15px;">
 									<input type="checkbox" class="custom-control-input" id="evntchk-19">
 									<label id="label-evntchk-19" class="custom-control-label" for="evntchk-19">LineFollowingBot</label>
@@ -206,11 +206,16 @@
 											<label id="label-evntchk-24" class="custom-control-label" for="evntchk-24">RoboClench</label>
 											<br>
 										</div>
+									<div class="custom-control custom-checkbox" style="text-align:left; font-size:15px;">
+											<input type="checkbox" class="custom-control-input" id="evntchk-25">
+											<label id="label-evntchk-25" class="custom-control-label" for="evntchk-25">Stratazenith</label>
+											<br>
+										</div>
 							</div>
 
 						</div>
 							<!-- Register button -->
-							<button type="button" class="btn btn-primary" id="btn_reg" style="border: 2px solid black; font-size: 20px; margin-top: 30px;">
+							<button type="button" class="btn btn-primary" id="btn_reg" style="border: 2px solid black; font-size: 20px; margin-top: 30px;" onclick="on()">
 								Register
 							</button>
 
@@ -274,10 +279,10 @@
 		</div>
 
 		<div class="row">
-			<div class="col-lg-5  btn btn-register headlinks" style="width:20%; color: white; font-size: 30px; border-radius: 20px; border: 1px solid white; text-align: center; margin-left: 20%; margin-right: 20%;" data-toggle="modal" data-target="#myModal">
+			<div class="col-lg-3 col-lg-offset-2" style="color: white; font-size: 30px; border-radius: 20px; border: 1px solid white; text-align: center;" data-toggle="modal" data-target="#myModal">
 				Register
 			</div>
-			<div class="col-lg-5  btn btn-register headlinks" style="width:20%; color: white; font-size: 30px; border-radius: 20px; border: 1px solid white; text-align: center;">
+			<div class="col-lg-3 col-lg-offset-2" style="color: white; font-size: 30px; border-radius: 20px; border: 1px solid white; text-align: center;">
 				<a href="downloadables/Rule Book.pdf" style="text-decoration: none; color: white">
 				Get the Rules
 				</a>
@@ -292,30 +297,56 @@
 					<div class="col-lg-3 blocks-container">
 					<a href="#" style="text-decoration: none">
 						<div class="blocks" data-toggle="modal" data-target="#roboficial" style="background-image: url('images/roboficial.jpg');" >
-						
+							<div style="background-color: rgba(0,0,0,0.5); position: absolute; bottom:0; top:0; left:0; right:0" >
 								<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Roboficial</p>
-					
+								<div class="row" >
+									<div class="col-lg-3 col-lg-offset-4">
+										<img src="images/robo.png" width="70vw">
+									</div>
+								</div>
+							</div>
 						</div>
 					</a>
 					</div>
 					<div class="col-lg-3 blocks-container">
 					<a href="#" style="text-decoration: none">
 						<div class="blocks" data-toggle="modal" data-target="#electrify" style="background-image: url('images/electrify.jpg');">
+							<div style="background-color: rgba(0,0,0,0.5); position: absolute; bottom:0; top:0; left:0; right:0" >
 							<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Electrify</p>
+							<div class="row" >
+									<div class="col-lg-3 col-lg-offset-4">
+										<img src="images/electrify.png" width="70vw">
+									</div>
+							</div>
+							</div>
 						</div>
 					</a>
 					</div>
 					<div class="col-lg-3 blocks-container">
 					<a href="#" style="text-decoration: none">
 						<div class="blocks" data-toggle="modal" data-target="#corporate" style="background-image: url('images/corporate.jpg');">
+						<div style="background-color: rgba(0,0,0,0.5); position: absolute; bottom:0; top:0; left:0; right:0" >
 							<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Corporate</p>
+							<div class="row" >
+									<div class="col-lg-3 col-lg-offset-4">
+										<img src="images/corporate.png" width="70vw">
+									</div>
+								</div>
+						</div>
 						</div>
 					</a>
 					</div>
 					<div class="col-lg-3 blocks-container">
 					<a href="#" style="text-decoration: none">
 						<div class="blocks"  data-toggle="modal" data-target="#designAndBuild" style="background-image: url('images/design%20and%20build.jpg');">
+							<div style="background-color: rgba(0,0,0,0.5); position: absolute; bottom:0; top:0; left:0; right:0" >
 							<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Design & Build</p>
+							<div class="row" >
+									<div class="col-lg-3 col-lg-offset-4">
+										<img src="images/ssss.png" width="70vw">
+									</div>
+								</div>
+							</div>
 						</div>
 					</a>
 					</div>
@@ -331,7 +362,14 @@
 					<div class="col-lg-4 blocks-container">
 					<a href="#" style="text-decoration: none">
 							<div class="blocks" data-toggle="modal" data-target="#programmersInc" style="background-image: url('images/programming.jpg');">
+							<div style="background-color: rgba(0,0,0,0.5); position: absolute; bottom:0; top:0; left:0; right:0" >
 								<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Programmers' Inc</p>
+								<div class="row" >
+									<div class="col-lg-3 col-lg-offset-4">
+										<img src="images/programmer.png" width="70vw">
+									</div>
+								</div>
+							</div>
 							</div>
 						</a>
 					</div>
@@ -339,7 +377,14 @@
 					<div class="col-lg-4 blocks-container">
 					<a href="#" style="text-decoration: none">
 							<div class="blocks" data-toggle="modal" data-target="#specials" style="background-image: url('images/specials.jpg');">
+								<div style="background-color: rgba(0,0,0,0.5); position: absolute; bottom:0; top:0; left:0; right:0" >
 								<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Specials</p>
+								<div class="row" >
+									<div class="col-lg-3 col-lg-offset-4">
+										<img src="images/specials.png" width="70vw">
+									</div>
+								</div>
+								</div>
 							</div>
 					</a>
 					</div>
@@ -352,29 +397,52 @@
 			<div class="row event-blocks">
 					<div class="col-lg-3 blocks-container">
 					<a href="#" style="text-decoration: none">
-						<div class="blocks" data-toggle="modal" data-target="#openShowcase" style="background-image: url('images/open%20showcase%20cover.jpg');">
-							<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Open Showcase</p>
+						<div class="blocks" data-toggle="modal" data-target="#IDRL" style="background-image: url('images/idrl.jpg');">
+						<div style="background-color: rgba(0,0,0,0.5); position: absolute; bottom:0; top:0; left:0; right:0" >
+							<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Indian Drone Racing League</p>
+						</div>
 						</div>
 					</a>
 					</div>
 					<div class="col-lg-3 blocks-container">
 					<a href="#" style="text-decoration: none">
 						<div class="blocks" data-toggle="modal" data-target="#cubix" style="background-image: url('images/cubix%20cover.jpg');">
+						<div style="background-color: rgba(0,0,0,0.5); position: absolute; bottom:0; top:0; left:0; right:0" >
 							<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Cubix</p>
+							<div class="row" >
+									<div class="col-lg-3 col-lg-offset-4">
+										<img src="images/cubix.png" width="70vw">
+									</div>
+								</div>
+						</div>
 						</div>
 					</a>
 					</div>
 					<div class="col-lg-3 blocks-container">
 					<a href="#" style="text-decoration: none">
 						<div class="blocks" data-toggle="modal" data-target="#elixir" style="background-image: url('images/elixir%20cover.jpg');">
+						<div style="background-color: rgba(0,0,0,0.5); position: absolute; bottom:0; top:0; left:0; right:0" >
 							<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Elixir</p>
+							<div class="row" >
+									<div class="col-lg-3 col-lg-offset-4">
+										<img src="images/elixir.png" width="70vw">
+									</div>
+								</div>
+						</div>
 						</div>
 					</a>
 					</div>
 					<div class="col-lg-3 blocks-container">
 					<a href="#" style="text-decoration: none">
 						<div class="blocks" data-toggle="modal" data-target="#matka" style="background-image: url('images/matka%20cover.jpg');">
+						<div style="background-color: rgba(0,0,0,0.5); position: absolute; bottom:0; top:0; left:0; right:0" >
 							<p class="block-title" style="color: white; text-shadow: 4px 4px black;">Matka</p>
+							<div class="row" >
+									<div class="col-lg-3 col-lg-offset-4">
+										<img src="images/matka.png" width="70vw">
+									</div>
+								</div>
+						</div>
 						</div>
 					</a>
 					</div>
@@ -388,7 +456,7 @@
 		<footer>
 			<br>
 			<!--metainfo display-->
-			<div class="author">Created by:</div>
+			<div class="author"></div>
 			<!--social media plugins-->
 			<div class="socialMedia"></div>
 			<br>
@@ -519,7 +587,11 @@
 				
 					<!-- Modal Header -->
 					<div class="modal-header">
-						<h4 class="modal-title">Electrify</h4>
+						<h4 class="modal-title">Electrify <div style="display: inline-block; position: absolute; right: 2vw">
+							<a href="downloadables/ELECTRIFY.pdf" >
+							Get rulebook.
+							</a>
+						</div></h4>
 					</div>
 					
 					<!-- Modal body -->
@@ -581,7 +653,11 @@
 					
 						<!-- Modal Header -->
 						<div class="modal-header">
-							<h4 class="modal-title">Corporate</h4>
+							<h4 class="modal-title">Corporate <div style="display: inline-block; position: absolute; right: 2vw">
+							<a href="downloadables/CORPORATE.pdf" >
+							Get rulebook.
+							</a>
+						</div></h4>
 						</div>
 						
 						<!-- Modal body -->
@@ -697,7 +773,11 @@
 				
 					<!-- Modal Header -->
 					<div class="modal-header">
-						<h4 class="modal-title">Design & Build</h4>
+						<h4 class="modal-title">Design & Build<div style="display: inline-block; position: absolute; right: 2vw">
+							<a href="downloadables/DESIGN%20AND%20BUILD.pdf" >
+							Get rulebook.
+							</a>
+						</div></h4>
 					</div>
 					
 					<!-- Modal body -->
@@ -776,7 +856,11 @@
 				
 					<!-- Modal Header -->
 					<div class="modal-header">
-						<h4 class="modal-title">Programmers' Inc</h4>
+						<h4 class="modal-title">Programmers' Inc<div style="display: inline-block; position: absolute; right: 2vw">
+							<a href="downloadables/PROGRAMMERS%20INC.pdf" >
+							Get rulebook.
+							</a>
+						</div></h4>
 					</div>
 					
 					<!-- Modal body -->
@@ -873,7 +957,12 @@
 				
 					<!-- Modal Header -->
 					<div class="modal-header">
-						<h4 class="modal-title">Specials</h4>
+						<h4 class="modal-title">Specials
+						<div style="display: inline-block; position: absolute; right: 2vw">
+							<a href="downloadables/SPECIALS.pdf" >
+							Get rulebook.
+							</a>
+						</div></h4>
 					</div>
 					
 					<!-- Modal body -->
@@ -882,6 +971,7 @@
 								<li class="active"><a data-toggle="tab" href="#paperPresentation">Paper Presentation</a></li>
 								<li><a data-toggle="tab" href="#stratazenith">Stratazenith</a></li>
 								<li><a data-toggle="tab" href="#schoolBags">School Bags</a></li>
+								<li><a data-toggle="tab" href="#openShowcase">OpenShowcase</a></li>
 						</ul>
 							
 						<div class="tab-content">
@@ -933,6 +1023,30 @@
 								
 									</div>
 							</div>
+							<div id="openShowcase" class="tab-pane fade in">
+								<h3>Open Showcase</h3>
+								<!--Event info-->
+								<div class="row">
+									<div class="col-lg-7">
+									<p>Open Showcase during Quark 2019 is a platform where you get to promulgate your projects and models, and make your amazing skills of design and innovation known to the world. Categories include:
+										<ul>
+											<li> > Mechanical and Chemical Engineering</li>
+											<li> > Electrical, Instrumentation & Computer Science</li>
+											<li> > General Sciences</li>
+										</ul>
+										<a href="downloadables/OPEN%20SHOWCASE.pdf">
+										Get the rules here.
+										</a>
+									</p>
+									</div>
+							
+									<!--Event pic-->
+									<div class="col-lg-5">
+										<img src="images/open%20showcase.jpg" width="100%">
+									</div>
+								
+								</div>
+							</div>
 						
 						</div>
 					</div>
@@ -946,36 +1060,32 @@
 			</div>
 		</div>
 
-		<!-- Open Showcase Modal -->
-		<div class="modal fade" id="openShowcase">
+		<!-- Indian Drone Racing League Modal -->
+		<div class="modal fade" id="IDRL">
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 				
 					<!-- Modal Header -->
 					<div class="modal-header">
-						<h4 class="modal-title">Open Showcase</h4>
+						<h4 class="modal-title">Indian Drone Racing League</h4>
 					</div>
 					
 					<!-- Modal body -->
 					<div class="modal-body">
 						<div class="tab-content">
-							<div id="openShowcase" class="tab-pane fade in active">
-								<h3>Open Showcase</h3>
+						<div id="cubix" class="tab-pane fade in active">
+								<h3>Indian Drone Racing League</h3>
 								<!--Event info-->
 								<div class="row">
 									<div class="col-lg-7">
-									<p>Open Showcase during Quark 2019 is a platform where you get to promulgate your projects and models, and make your amazing skills of design and innovation known to the world. Categories include:
-										<ul>
-											<li> > Mechanical and Chemical Engineering</li>
-											<li> > Electrical, Instrumentation & Computer Science</li>
-											<li> > General Sciences</li>
-										</ul>
+									<p>Coming soon. Come back for more info.
+										
 									</p>
 									</div>
 							
 									<!--Event pic-->
 									<div class="col-lg-5">
-										<img src="images/open%20showcase.jpg" width="100%">
+										
 									</div>
 								
 								</div>
@@ -1000,7 +1110,11 @@
 				
 					<!-- Modal Header -->
 					<div class="modal-header">
-						<h4 class="modal-title">Cubix</h4>
+						<h4 class="modal-title">Cubix<div style="display: inline-block; position: absolute; right: 2vw">
+							<a href="downloadables/CUBIX.pdf" >
+							Get rulebook.
+							</a>
+						</div></h4>
 					</div>
 					
 					<!-- Modal body -->
@@ -1051,7 +1165,11 @@
 				
 					<!-- Modal Header -->
 					<div class="modal-header">
-						<h4 class="modal-title">Elixir</h4>
+						<h4 class="modal-title">Elixir<div style="display: inline-block; position: absolute; right: 2vw">
+							<a href="downloadables/ELIXIR.pdf" >
+							Get rulebook.
+							</a>
+						</div></h4>
 					</div>
 					
 					<!-- Modal body -->
@@ -1097,7 +1215,11 @@
 				
 					<!-- Modal Header -->
 					<div class="modal-header">
-						<h4 class="modal-title">Matka</h4>
+						<h4 class="modal-title">Matka<div style="display: inline-block; position: absolute; right: 2vw">
+							<a href="downloadables/MATKA.pdf" >
+							Get rulebook.
+							</a>
+						</div></h4>
 					</div>
 					
 					<!-- Modal body -->

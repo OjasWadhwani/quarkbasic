@@ -11,7 +11,7 @@ $(function () {
         regData.phoneNoOfPerson = $("#PhoneNumber").val();
         regData.referralCode = $("#ReferralCode").val();
         regData.eventsRegistered = [];    
-        for (let index = 0; index < 25; index++) {
+        for (let index = 0; index < 26; index++) {
             if( $("#evntchk-"+index).is(':checked') === true) {
                 regData.eventsRegistered.push($("#label-evntchk-"+index).text());
             }            

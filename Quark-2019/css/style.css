@@ -49,7 +49,7 @@ body{
 	position: absolute;
 	top: 2vw;
 	left: 2vw;
-	font-size: 2vw;
+	font-size: 30px;
 	text-decoration: none;
 	/*-webkit-transition: all 0.5s;*/
 	color: white;
@@ -132,7 +132,7 @@ li{
 
 .event-blocks{
 	color:white;
-	opacity: 0.5;
+	opacity: 0.9;
 	margin-top: 100px;
 }
 
