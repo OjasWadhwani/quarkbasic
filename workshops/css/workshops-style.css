@@ -29,4 +29,46 @@
     margin-right: 2vw;
     padding-left: 1vw;
     border: 2px solid white;
+    border-radius: 2vw;
+    background-color: rgba(255, 255, 0, 0.3);
+}
+.edel{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-left: 1vw;
+    border: 2px solid white;
+    border-radius: 2vw;
+    background-color: rgba(168, 99, 21, 0.3);
+}
+.schneider{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-left: 1vw;
+    border: 2px solid white;
+    border-radius: 2vw;
+    background-color: rgba(172, 26, 16, 0.3);
+}
+.microsoft{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-left: 1vw;
+    border: 2px solid white;
+    border-radius: 2vw;
+    background-color: rgba(12, 172, 105, 0.3);
+}
+.autodesk{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-left: 1vw;
+    border: 2px solid white;
+    border-radius: 2vw;
+    background-color: rgba(62, 158, 18, 0.3);
+}
+.oracle{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-left: 1vw;
+    border: 2px solid white;
+    border-radius: 2vw;
+    background-color: rgba(61, 14, 114, 0.3);
 }
