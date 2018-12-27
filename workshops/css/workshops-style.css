@@ -13,12 +13,16 @@
     transition: all 0.5s;
 }
 #sidenavCog:hover{
-    text-decoration: none;
+    text-decoration: none  !important;
     color: rgb(139, 120, 120);
     top: 1vw;
     left: 2vw;
     position: absolute;
     font-size: 30px
+}
+.headlinks{
+    color:white;
+    text-decoration: none;
 }
 .headlinks:hover{
    
