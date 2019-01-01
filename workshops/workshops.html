@@ -20,18 +20,15 @@
 	
 	<!--Audiowide font-->
 	<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
 </head>
 
 <body>
-  <!--Canvas scripts-->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js'></script>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js'></script>
-  <script  src="js/index.js"></script>
+<div class="container-fluid">
 
   <!--Main Body-everything over the canvas appears here-->
-  <div class="main" style="position:absolute; z-index: 10; color:white; top:0px; left:0px; right:0px; bottom:0px; overflow-y: scroll; overflow-x: hidden">
+  <div class="main">
 
     <!--Side Nav Bar-->
     <!-- <div id="mySidenav" class="sidenav">
@@ -57,7 +54,7 @@
 		<div class="row">
       <div class="col-lg-12" >
         <p class="heading" >Workshops</p>
-        <a href="../index.html"><span class="glyphicon glyphicon-home" id="sidenavCog"> <!--onclick="SidenavToggle();"> --></span></a>
+        <a href="../index.html"><span class="glyphicon glyphicon-home" id="sidenavCog"></span></a>
       </div>
     </div>
 
@@ -69,8 +66,9 @@
     </div>
 
     <div class="row">
-      <div class="col-lg-4 col-lg-offset-4 headlinks" style="font-size: 30px; text-align: center; ">
-        <a href="https://goo.gl/forms/6c7HIRt5bfntu6ao2" class="headlinks">Register for Workshops >>></a>
+      <div class="col-lg-4 col-lg-offset-4 " style="font-size: 30px; text-align: center; ">
+        <!-- <a href="https://goo.gl/forms/6c7HIRt5bfntu6ao2" class="headlinks" style="border: 5px solid black; padding: 10px;">Register for Workshops >>></a> -->
+        <button onclick="window.location.href='https://goo.gl/forms/6c7HIRt5bfntu6ao2'" id="registerbutton">Register</button>
       </div>
     </div>
 
@@ -78,12 +76,13 @@
     <br>
     <!--Panels for Workshops-->
     <!--IBM-->
-    <div class="row">
+    <div class="row" style="width: 84%; margin-left: 8%;">
       <div class="ibm">
-        <h4 style="font-size: 3vw"><b>Blockchain - IBM</b></h4>
+        <h4 style="font-size: 2.8vw; margin-left: 2%; margin-top: 2%;" ><b>Blockchain - IBM</b></h4>
         <div class="row">
-          <div class="col-lg-9">
-            <p style="font-family: sans-serif; font-size: 1.5vw;">Blockchain technology presents opportunities for disruptive innovation and is
+          <div class="col-lg-8" style="margin:1%;">
+            <p style="font-family: sans-serif; font-size: 1.2vw;margin-left: 2%; padding: 15px; text-align: justify; border: 5px solid white;   background-color: black;">
+              Blockchain technology presents opportunities for disruptive innovation and is
               poised to change IT in much the same way open-source software did a quarter
               of a century ago. It allows multiple different parties to securely interact with the
               same universal source of truth. A blockchain is a peer-to-peer distributed ledger
@@ -96,30 +95,32 @@
               with IBM.
             </p>
           </div>
-          <div class="col-lg-3">
-            <img src="images/ibm.jpg" width="70%">  <!--Add images everywhere-->
+          <div class="col-lg-4" style=" margin-left: 4%; border: 5px solid white; margin-top: 1%;  padding: 0 !important;width: 320px; height: 320px;">
+            <img src="images/ibm.jpg" style="width: 310px; height: 310px;">  <!--Add images everywhere-->
           </div>
         </div>
       </div>
     </div>
     <br>
     <br>
-    <!--Edelweiss-->
-    <div class="row">
+     <!--Edelweiss-->
+    <div class="row" style="width: 84%; margin-left: 8%;">
       <div class="edel">
-        <h4 style="font-size: 3vw"><b>Investment Planning - Edelweiss</b></h4>
+        <h4 style="font-size: 2.8vw; margin-left: 2%; margin-top: 2%;" ><b>Investment Planning - Edelweiss</b></h4>
         <div class="row">
-          <div class="col-lg-9">
-            <p style="font-family: sans-serif; font-size: 1.5vw;">With carefree college life ending in a few years, it&#39;s time to equip yourself with
+          <div class="col-lg-8" style="margin:1%;">
+            <p style="font-family: sans-serif; font-size: 1.2vw;margin-left: 2%; padding: 15px; text-align: justify; border: 5px solid white;   background-color: black;">
+                With carefree college life ending in a few years, it&#39;s time to equip yourself with
                 the tools that help you navigate the tricky outside world. Clueless about how to
                 make your money last longer? Want to learn about ways to multiply your
-                money?</p>
-            <p style="font-family: sans-serif; font-size: 1.5vw;">This workshop, conducted by Edelweiss on ‘Investment Planning’ in
+                money?
+                This workshop, conducted by Edelweiss on ‘Investment Planning’ in
                 association with Quark 2019, will help you understand the world of finance.
-                Make that transition into adulthood much smoother!</p>
+                Make that transition into adulthood much smoother!
+            </p>
           </div>
-          <div class="col-lg-3">
-            <img src="images/edel.png" width="70%">  <!--Add images everywhere-->
+          <div class="col-lg-4" style=" margin-left: 4%; border: 5px solid white; margin-top: 1%;  padding: 0 !important; width: 320px; height: 195px;">
+            <img src="images/edel.png" style="width: 310px; height: 185px;">  <!--Add images everywhere-->
           </div>
         </div>
       </div>
@@ -127,95 +128,101 @@
     <br>
     <br>
     <!--Schneider-->
-    <div class="row">
-        <div class="schneider">
-          <h4 style="font-size: 3vw"><b>Robotics and Automation-Schneider Electric</b></h4>
-          <div class="row">
-            <div class="col-lg-9">
-              <p style="font-family: sans-serif; font-size: 1.5vw;">Robots are the heart of technical evolution where man and machine are
+    <div class="row" style="width: 84%; margin-left: 8%;">
+      <div class="schneider">
+        <h4 style="font-size: 2.8vw; margin-left: 2%; margin-top: 2%;" ><b>Robotics and Automation-Schneider Electric</b></h4>
+        <div class="row">
+          <div class="col-lg-8" style="margin:1%;">
+            <p style="font-family: sans-serif; font-size: 1.2vw;margin-left: 2%; padding: 15px; text-align: justify; border: 5px solid white;   background-color: black;">
+              Robots are the heart of technical evolution where man and machine are
                   connected like never before. The revolution has begun and there is no better
-                  time than this to leap into the field of robotics and automation than now.</p>
-              <p style="font-family: sans-serif; font-size: 1.5vw;">Get a head start by this 2 day workshop by Schneider Electric during Quark
-                  2019.</p>
-            </div>
-            <div class="col-lg-3">
-              <img src="images/schneider.png" width="45%" style="margin-bottom:0.5vw">  <!--Add images everywhere-->
-            </div>
+                  time than this to leap into the field of robotics and automation than now.
+              Get a head start by this 2 day workshop by Schneider Electric during Quark
+                  2019.
+            </p>
+          </div>
+          <div class="col-lg-4" style=" margin-left: 4%; border: 5px solid white; margin-top: 1%;  padding: 0 !important; width: 320px; height: 160px;">
+            <img src="images/schneider.png" style="width: 310px; height: 150px;">  <!--Add images everywhere-->
           </div>
         </div>
+      </div>
     </div>
     <br>
     <br>
     <!--Microsoft-->
-    <div class="row">
-        <div class="microsoft">
-          <h4 style="font-size: 3vw"><b>Cloud Computing-Microsoft</b></h4>
-          <div class="row">
-            <div class="col-lg-9">
-              <p style="font-family: sans-serif; font-size: 1.5vw;">In this 2-day, instructor-led workshop, students will be introduced to the
+    <div class="row" style="width: 84%; margin-left: 8%;">
+      <div class="microsoft">
+        <h4 style="font-size: 2.8vw; margin-left: 2%; margin-top: 2%;" ><b>Cloud Computing-Microsoft</b></h4>
+        <div class="row">
+          <div class="col-lg-8" style="margin:1%;">
+            <p style="font-family: sans-serif; font-size: 1.2vw;margin-left: 2%; padding: 15px; text-align: justify; border: 5px solid white;   background-color: black;">
+              In this 2-day, instructor-led workshop, students will be introduced to the
                   principles of cloud computing and will become familiar how these principles
-                  have been implemented in Microsoft Azure.</p>
-              <p style="font-family: sans-serif; font-size: 1.5vw;">This workshop will take students through the process of implementing the core
+                  have been implemented in Microsoft Azure.
+              This workshop will take students through the process of implementing the core
                   Azure infrastructure, consisting of virtual networks and storage. With this
                   foundation, students will learn how to create the most common Azure services,
                   including Azure virtual machines (VMs), Web Apps, and SQL Databases. The
                   Workshop will conclude by describing features of Azure Active Directory
-                  (Azure AD) and methods of integrating it with on-premises Active Directory.</p>
-            </div>
-            <div class="col-lg-3">
-              <img src="images/microsoft.png" width="50%">  <!--Add images everywhere-->
-            </div>
+                  (Azure AD) and methods of integrating it with on-premises Active Directory.
+            </p>
+          </div>
+          <div class="col-lg-4" style=" margin-left: 4%; border: 5px solid white; margin-top: 1%;  padding: 0 !important;width: 320px; height: 230px;">
+            <img src="images/microsoft.png" style="width: 310px; height: 220px;">  <!--Add images everywhere-->
           </div>
         </div>
       </div>
+    </div>
     <br>
     <br>
     <!--Autodesk-->
-    <div class="row">
-        <div class="autodesk">
-          <h4 style="font-size: 3vw"><b>Fusion 360-Autodesk</b></h4>
-          <div class="row">
-            <div class="col-lg-9">
-              <p style="font-family: sans-serif; font-size: 1.5vw;">Have you ever thought of a product that can change the world but feel that
+   <div class="row" style="width: 84%; margin-left: 8%;">
+      <div class="autodesk">
+        <h4 style="font-size: 2.8vw; margin-left: 2%; margin-top: 2%;" ><b>Fusion 360-Autodesk</b></h4>
+        <div class="row">
+          <div class="col-lg-8" style="margin:1%;">
+            <p style="font-family: sans-serif; font-size: 1.2vw;margin-left: 2%; padding: 15px; text-align: justify; border: 5px solid white;   background-color: black;">
+              Have you ever thought of a product that can change the world but feel that
                   you don&#39;t have the necessary skills to visualise and design it? Worry not,
                   for this workshop conducted by Autodesk in association with Quark 2019
                   is all set to introduce you to Fusion 360, a powerful tool used for 3D
                   designing, validating, fabricating, and simulating product designs and
                   digital prototypes. Don&#39;t miss this opportunity of experiencing a hands-on
-                  tutorial that teaches you the life cycle of a product design!</p>
-              <p style="font-family: sans-serif; font-size: 1.5vw;">To get started with Autodesk Fusion 360, read this document, &quot;Autodesk
-                  Fusion 360&quot;.</p>
-            </div>
-            <div class="col-lg-3">
-              <img src="images/autodesk.png" width="50%">  <!--Add images everywhere-->
-            </div>
+                  tutorial that teaches you the life cycle of a product design!
+              To get started with Autodesk Fusion 360, read this document, &quot;Autodesk
+                  Fusion 360&quot;.
+            </p>
+          </div>
+          <div class="col-lg-4" style=" margin-left: 4%; border: 5px solid white; margin-top: 1%;  padding: 0 !important;width: 320px; height: 220px;">
+            <img src="images/autodesk.png" style="width: 310px; height: 210px;">  <!--Add images everywhere-->
           </div>
         </div>
       </div>
+    </div>
     <br>
     <br>
     <!--Oracle-->
-    <div class="row">
-        <div class="oracle">
-          <h4 style="font-size: 3vw"><b>Big Data using Hadoop-Oracle</b></h4>
-          <div class="row">
-            <div class="col-lg-9">
-              <p style="font-family: sans-serif; font-size: 1.5vw;">With rapid innovations, frequent evolutions of technologies and a rapidly
+   <div class="row" style="width: 84%; margin-left: 8%;">
+      <div class="oracle">
+        <h4 style="font-size: 2.8vw; margin-left: 2%; margin-top: 2%;" ><b>Big Data using Hadoop-Oracle</b></h4>
+        <div class="row">
+          <div class="col-lg-8" style="margin:1%;">
+            <p style="font-family: sans-serif; font-size: 1.2vw;margin-left: 2%; padding: 15px; text-align: justify; border: 5px solid white;   background-color: black;">
+              With rapid innovations, frequent evolutions of technologies and a rapidly
                   growing internet population, systems and enterprises are generating huge
                   amounts of data to the tune of terabytes and even petabytes of information.
                   Hadoop is undoubtedly the preferred choice for such a requirement due to
                   its key characteristics of being reliable, flexible, economical, and a
                   scalable solution. To get the true taste of this field, attend the Big Data
-                  using Hadoop this quark.</p>
-             
-            </div>
-            <div class="col-lg-3">
-              <img src="images/oracle.jpg" width="50%">  <!--Add images everywhere-->
-            </div>
+                  using Hadoop this quark.
+            </p>
+          </div>
+          <div class="col-lg-4" style=" margin-left: 4%; border: 5px solid white; margin-top: 1%;  padding: 0 !important;width: 320px; height: 220px;">
+            <img src="images/oracle.jpg" style="width: 310px; height: 210px;">  <!--Add images everywhere-->
           </div>
         </div>
       </div>
-    
+    </div>
 
     <footer>
       <br>
@@ -228,10 +235,12 @@
   </div>
 
   <!--End of main-->
-
-
-
-
+</div>
+<!--Canvas scripts-->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js'></script>
+  <script  src="js/index.js"></script>
   
 </body>
 

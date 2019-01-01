@@ -1,4 +1,4 @@
-(function() {
+	(function() {
 	'use strict';
 	/* 	'To actually be able to display anything with Three.js, we need three things:
 		A scene, a camera, and a renderer so we can render the scene with the camera.' 
@@ -68,7 +68,7 @@
 			renderer = new THREE.CanvasRenderer();
 		}
 
-		renderer.setClearColor(0x000011, 1);
+		renderer.setClearColor(0x000000, 1);
 		renderer.setPixelRatio(window.devicePixelRatio);
 		renderer.setSize( WIDTH, HEIGHT);
 		container.appendChild(renderer.domElement);
@@ -123,11 +123,11 @@
 		/* 	Yep, it's a Star Wars: Knights of the Old Republic reference,
 			are you really surprised at this point? 
 													*/
-		var starQty = 45000;
+		var starQty = 10000;
 			geometry = new THREE.SphereGeometry(1000, 100, 50);
 
 	    	materialOptions = {
-	    		size: 1.0, //I know this is the default, it's for you.  Play with it if you want.
+	    		size: 0.6, //I know this is the default, it's for you.  Play with it if you want.
 	    		transparency: true, 
 	    		opacity: 0.7
 	    	};
