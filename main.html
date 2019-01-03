@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Quark-2019</title>
+        <link rel="stylesheet" type="text/css" href="main-css.css">
+
+        <!--Social Media-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </head>
+    <body>
+        
+        <div id="mySidebar" class="sidebar" style="scroll-behavior: auto">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <a href="index.html" data-toggle="modal" data-target="#about">About</a>
+            <a href="Quark-2019/index.html">Events</a>
+            <a href="workshops/workshops.html">Workshops</a>
+            <a href="team.html">Team</a>
+            <a href="img/PaymentTutorial.pdf">Payment-Tutorial</a>
+            <a href="qriosity.html">Qriosity</a>
+            <a href="#">Exhibitions(Coming Soon)</a>
+            <a href="#">Guest Lectures (Coming Soon)</a>
+
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-5">
+                    <div class="logo">
+                        <img src="img/logo-min.png" width="150vw" style="margin-left:4vw">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-3" style="color:white; margin-left: 1vw; font-family: Arial; text-align: center">
+                    <i>BITS Pilani, K.K Birla Goa Campus</i>
+                </div>
+            </div>
+
+            <div style="color: gray; top: 20px; position: relative; font-size: 50%; font-family: Arial; text-align: center">
+                    Developed by: Ojas Wadhwani, Chinmay Gupta
+                </div>
+            
+            
+        </div>
+        <div id="main">
+            <!--Video-->
+            <video autoplay loop muted id="backvid" >
+                 <source src="backvid.mp4" type="video/mp4">
+            </video>
+            <!--Main-->
+            <div class="content">
+                <button class="openbtn" onclick="openNav()" style="border: 2px solid white; border-radius: 5px">&#9776;</button>
+                <div class="social">
+                    <a href="https://www.facebook.com/bitsquark/" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/bitsquark" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCqtrSV1VbseY2GPC0HhJphA" class="fa fa-youtube"></a>
+                    <a href="https://www.instagram.com/bitsquark/" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/company/quark-bits-pilani-goa/" class="fa fa-linkedin"></a>
+                    
+                </div>
+                <div style="color: white; bottom: 0.5vw; left: 1vw;position: absolute; font-size: 100%; font-family: Arial, Helvetica, sans-serif">
+                    Quark-2019 <sub><i>1st to 3rd Feb</i></sub>
+                   
+                </div >
+                
+            </div>
+            
+            
+        </div>       
+    <script>
+        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        } 
+    </script>
+    </body>
+</html>
