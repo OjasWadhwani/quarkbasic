@@ -1,12 +1,23 @@
-#backvid{
-    z-index: -2;
-    position: fixed;
-    left:0;
-    width:100vw !important;
-    height:100vh;
+html{
+  overflow: hidden;
 }
+video {   position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -2;
+  transform: translate(-50%, -50%);
+  width: 1920px;
+  height: 100%;
+}
+@media only screen and (min-width: 768px) {
+  video{
+      width: 3500px;
+  }
+} 
+
 body{
     background-color: black;
+    margin: 0;
 }
 
  /* The sidebar menu */
@@ -64,7 +75,6 @@ body{
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
     transition: margin-left .5s; /* If you want a transition effect */
-    padding: 20px;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -119,4 +129,15 @@ body{
 .fa-linkedin{
   background: #3B5998;
   color: white;
+}
+#backvid-div{
+  width: 100%;
+  text-align: center;
+}
+.topbar{
+  position: absolute;
+  top: 10px;
+  width: 98%;
+  padding-left: 2vw;
+  margin: auto 0;
 }
