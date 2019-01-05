@@ -9,9 +9,23 @@
 
     </head>
     <body>
-        
+        <!--Small script to toggle nav bar-->
+        <script>
+            var open=false;
+            function nav(){
+                if (open==false)
+                    {   openNav();
+                        open=true;
+                    }
+                else 
+                {
+                    closeNav();
+                    open=false;
+                }
+            }
+        </script>
         <div id="mySidebar" class="sidebar" style="scroll-behavior: auto">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="nav()">&times;</a>
             
             <a href="index.html" data-toggle="modal" data-target="#about">About</a>
             <a href="Quark-2019/index.html">Events</a>
@@ -50,7 +64,7 @@
             </video>
             <!--Main-->
             <div class="content">
-                <button class="openbtn" onclick="openNav()" style="border: 2px solid white; border-radius: 5px">&#9776;</button>
+                <button class="openbtn" onclick="nav()" style="border: 2px solid white; border-radius: 5px">&#9776;</button>
                 <div class="social">
                     <a href="https://www.facebook.com/bitsquark/" class="fa fa-facebook"></a>
                     <a href="https://twitter.com/bitsquark" class="fa fa-twitter"></a>
