@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Quark 2019 | About
+	</title>
+	<!--Unicode declaration-->
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+	<!-- CSS-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/css/mdb.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<!--Audiowide font-->
+	<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+
+	
+</head>
+
+<body>
+	
+	
+
+	<!-- Main Container -->
+	<div class="container-fluid" id="main">
+
+		<!--Canvas for heading-->
+		<div class="headBackground">
+			<canvas id="stars"></canvas>	
+		</div>	
+
+		<!--Header-->
+		<div class="row">
+			<div class="col-lg-12" >
+				<p class="heading" >About</p>
+				<a href="../index.html"><span class="glyphicon glyphicon-home" id="sidenavCog"> <!--onclick="SidenavToggle();"> --></span></a>
+			</div>
+		</div>
+
+		<!--White line-->
+		<div class="row">
+			<div class="col-lg-12">
+				<hr class="divider" style="height:5px; color:white; background-color:white; border-radius: 20px; opacity: 0.8">
+			</div>
+		</div>
+        <div class="row" style="text-align: center;">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <p style="font-size:20px; color: azure;">Quark is the annual technical festival of BITS, Pilani-K.K. Birla Goa Campus,one of the biggest festivals of ots kind in India. From its modest beginnings in 2006, Quark morphed into a national level festival in its 2008 version. Since then,Quark has consistently seen participation from all leading colleges across India. Quark usually features varioues events pertaining to the different engineering branches as well as the pure sciences. With a plethora of events to cater to students of varied backgrounds and disciplines, including a lecture by the eminent former president president Dr. A.P.J Abdul Kalam, Nobel laureates like Sir Harry Kroto and Douglas Osheroff, events like the BITS Model United Nations and a number of diverse workshops organized by various eminent associations. Quark has carved a niche for itself as one of the biggest technical fest in India.</p>
+                </div>
+        </div>
+    </div>
+
+
+<!-- MDB JQuery-->	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/js/mdb.min.js"></script>
+
+<!-- Firebase scripts -->
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-functions.js"></script>
+
+<!--Events Heading canvas script-->
+<script src='http://requirejs.org/docs/release/2.1.15/minified/require.js'></script>
+<script src='https://rawgit.com/ironwallaby/delaunay/master/delaunay.js'></script>
+<script src="script/stars.js"></script>
+
+<!-- General Script -->
+<script type="text/javascript" src="script/script.js"></script>
+
+<!-- Firebase initialization script-->
+<script src="scripts/firebase_init.js"></script>
+	
+<!--Include user defined scripts here-->
+<script type="text/javascript" src="scripts/index.js"></script>	
+	
+</body>
+</html>
