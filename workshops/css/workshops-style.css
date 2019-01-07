@@ -12,10 +12,15 @@
     font-family: 'Sarabun', sans-serif;
 }
 .heading{
-    font-family: audiowide;
-    font-size: 700%;
+    color: white;
+    font-family: Audiowide;
+    display: block;
     text-align: center;
-    margin-top: 1%;
+    font-size: 40px;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    z-index: 1;
+    right: 0;
 }
 #sidenavCog{
     text-decoration: none;
@@ -23,7 +28,7 @@
     top: 3.5vw;
     left: 3vw;
     position: absolute;
-    font-size: 40px;
+    font-size: 30px;
     transition: all 0.5s;
 }
 #sidenavCog:hover{
