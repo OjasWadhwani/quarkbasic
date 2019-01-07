@@ -25,7 +25,42 @@
 </head>
 
 <body>
+  <!-- Register Form -->
+  <!-- <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="defaultForm-email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+        </div>
 
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="defaultForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-default">Login</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="text-center">
+  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Launch
+    Modal Login Form</a>
+</div> -->
   <!--Main Body-everything over the canvas appears here-->
   <div class="main container-fluid">
 
@@ -67,7 +102,8 @@
     <div class="row">
       <div class="col-lg-4 col-lg-offset-4 " style="font-size: 30px; text-align: center; ">
         <!-- <a href="https://goo.gl/forms/6c7HIRt5bfntu6ao2" class="headlinks" style="border: 5px solid black; padding: 10px;">Register for Workshops >>></a> -->
-        <button onclick="window.location.href='https://goo.gl/forms/6c7HIRt5bfntu6ao2'" id="registerbutton">Register</button>
+        <button onclick="window.location.href='#registerform'" id="registerbutton">Register</button>
+        <!-- <button id="registerbutton" data-toggle="modal" data-target="#modalLoginForm">Register</button> -->
       </div>
     </div>
 
@@ -220,6 +256,101 @@
             <img src="images/oracle.jpg" style="width: 220px; height: 150px;">  <!--Add images everywhere-->
           </div>
         </div>
+      </div>
+    </div>  
+    <br>
+    <br>
+    <!--Register Form-->
+   <div class="row" style="width: 70%; margin-left: 15%;">
+      <div id="registerform">
+                  <!-- Default form login -->
+          <form class="text-center border border-light p-5">
+
+              <p class="h4 mb-4"><B><h1>Register</B></h1></p>
+              <div>
+              <!-- Name -->
+              <input type="name" id="defaultLoginFormName" class="form-control mb-4" placeholder="Full-Name">
+              <br>
+              <!-- Email -->
+              <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+              <br>
+              <!-- Name of College-->
+              <input type="college-name" id="defaultLoginFormNameCollege" class="form-control mb-4" placeholder="College-Name">
+              <br>
+              <!-- Place of College-->
+              <input type=college-place" id="defaultLoginFormPlaceCollege" class="form-control mb-4" placeholder="Place of College">
+              <br>
+              <!-- Phone Number-->
+              <input type=phone-number" id="defaultLoginFormPhno" class="form-control mb-4" placeholder="Phone Number">
+              <br>
+              <!-- Phone Number-->
+              <input type=oprc" id="defaultLoginFormOprc" class="form-control mb-4" placeholder="Optional Referral code">       
+              
+              </div>
+
+              <h1>Workshops</h1>
+
+                <div class="w-checkboxes">
+                  <!-- Material unchecked -->
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="materialUnchecked">
+                      <label class="form-check-label" for="materialUnchecked">IBM- Blockchain(01 February 2019)</label>
+                  </div>
+
+                  <!-- Material unchecked -->
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="materialUnchecked">
+                      <label class="form-check-label" for="materialUnchecked">Edelweiss- Investment Planning(01 February 2019)</label>
+                  </div>
+              
+
+              
+                  <!-- Material unchecked -->
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="materialUnchecked">
+                      <label class="form-check-label" for="materialUnchecked">Schneider Electric - Robotics and Automation(01-02 February 2019)</label>
+                  </div>
+
+                  <!-- Material unchecked -->
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="materialUnchecked">
+                      <label class="form-check-label" for="materialUnchecked">Microsoft- Cloud Computing(02-03 February 2019)</label>
+                  </div>
+             
+
+              
+                  <!-- Material unchecked -->
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="materialUnchecked">
+                      <label class="form-check-label" for="materialUnchecked">Autodesk- Design Using Fusion360(02-03 February 2019)</label>
+                  </div>
+
+                  <!-- Material unchecked -->
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="materialUnchecked">
+                      <label class="form-check-label" for="materialUnchecked">Oracle- Big Data Using Hadoop(02-03 February 2019)</label>
+                  </div>
+              </div>
+
+              <br>
+        
+                <h3>Accomodation Required?</h3>
+                  <!-- Material unchecked -->
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="materialUnchecked">
+                      <label class="form-check-label" for="materialUnchecked">Yes</label>
+                  </div>
+                  <!-- Material unchecked -->
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="materialUnchecked">
+                      <label class="form-check-label" for="materialUnchecked">No</label>
+                  </div>
+
+              <!-- Sign in button -->
+              <button id="registerbutton" style="margin-bottom: 5%; margin-top: 2%;">Register</button>
+
+          </form>
+          <!-- Default form login -->
       </div>
     </div>
 

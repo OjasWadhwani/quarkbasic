@@ -1,7 +1,7 @@
 .main{
     /*background-color: black;*/
     position:absolute;
-    z-index: 10;
+    z-index: 0;
     color: white;
     top:0px;
     left:0px;
@@ -10,6 +10,9 @@
     overflow-y: scroll;
     overflow-x: hidden;
     font-family: 'Sarabun', sans-serif;
+}
+#modalLoginForm{
+  z-index: 0;
 }
 .heading{
     font-family: audiowide;
@@ -132,6 +135,19 @@
     border: 2px solid white;
     border-radius: 2vw;
     background-color: rgba(61, 14, 114, 0.2);
+}
+#registerform{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    border: 2px solid white;
+    border-radius: 2vw;
+    background-color: rgba(61, 14, 114, 0.2);
+}
+.w-checkboxes{
+  text-align: left;
+  margin-left: 28%;
 }
 @media (max-width: 1813px){
   .main{
