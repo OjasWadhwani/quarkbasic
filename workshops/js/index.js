@@ -56,56 +56,54 @@
 		 	is the portion of a solid (normally a cone or pyramid) 
 		 	that lies between two parallel planes cutting it. - wikipedia.		*/
 
-    camera = new THREE.PerspectiveCamera(
-      fieldOfView,
-      aspectRatio,
-      nearPlane,
-      farPlane
-    );
+		camera = new THREE.PerspectiveCamera(fieldOfView, aspectRatio, nearPlane, farPlane);
 
-    //Z positioning of camera
+		//Z positioning of camera
 
-    camera.position.z = farPlane / 2;
+		camera.position.z = farPlane / 2;
+		
+		scene = new THREE.Scene({antialias:true});
+		scene.fog = new THREE.FogExp2( 0x000000, 0.0003 );
 
-    scene = new THREE.Scene({ antialias: true });
-    scene.fog = new THREE.FogExp2(0x000000, 0.0003);
+		// The wizard's about to get busy.
+		starForge();
+		
+		//check for browser Support
+		if (webGLSupport()) {
+			//yeah?  Right on...
+			renderer = new THREE.WebGLRenderer({alpha: true});
 
-    // The wizard's about to get busy.
-    starForge();
+		} else {
+			//No?  Well that's okay.
+			renderer = new THREE.CanvasRenderer();
+		}
 
-    //check for browser Support
-    if (webGLSupport()) {
-      //yeah?  Right on...
-      renderer = new THREE.WebGLRenderer({ alpha: true });
-    } else {
-      //No?  Well that's okay.
-      renderer = new THREE.CanvasRenderer();
-    }
+		renderer.setClearColor(0x000000, 1);
+		renderer.setPixelRatio(window.devicePixelRatio);
+		renderer.setSize( WIDTH, HEIGHT);
+		container.appendChild(renderer.domElement);
 
-    renderer.setClearColor(0x000000, 1);
-    renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(WIDTH, HEIGHT);
-    container.appendChild(renderer.domElement);
+	
+		window.addEventListener( 'resize', onWindowResize, false );
+		document.addEventListener( 'mousemove', onMouseMove, false );
+		
+	}
 
-    window.addEventListener("resize", onWindowResize, false);
-    document.addEventListener("mousemove", onMouseMove, false);
-  }
+	function animate() {
+		requestAnimationFrame(animate);
+		render();
+	}
 
-  function animate() {
-    requestAnimationFrame(animate);
-    render();
-    stats.update();
-  }
 
-  function render() {
-    camera.position.x += (mouseX - camera.position.x) * 0.005;
-    camera.position.y += (-mouseY - camera.position.y) * 0.005;
-    camera.lookAt(scene.position);
-    renderer.render(scene, camera);
-  }
+	function render() {
+		camera.position.x += ( mouseX - camera.position.x ) * 0.005;
+		camera.position.y += ( - mouseY - camera.position.y ) * 0.005;
+		camera.lookAt( scene.position );
+		renderer.render(scene, camera);
+	}
 
-  function webGLSupport() {
-    /* 	The wizard of webGL only bestows his gifts of power
+	function webGLSupport() {
+		/* 	The wizard of webGL only bestows his gifts of power
 			to the worthy.  In this case, users with browsers who 'get it'.		*/
 
     try {
