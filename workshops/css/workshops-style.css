@@ -1,54 +1,54 @@
-.main{
-    /*background-color: black;*/
-    position:absolute;
-    z-index: 0;
-    color: white;
-    top:0px;
-    left:0px;
-    right:0px;
-    bottom:0px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    font-family: 'Sarabun', sans-serif;
+.main {
+  /*background-color: black;*/
+  position: absolute;
+  z-index: 0;
+  color: white;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Sarabun", sans-serif;
 }
-#modalLoginForm{
+#modalLoginForm {
   z-index: 0;
 }
-.heading{
-    color: white;
-    font-family: Audiowide;
-    display: block;
-    text-align: center;
-    font-size: 40px;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    z-index: 1;
-    right: 0;
+.heading {
+  color: white;
+  font-family: Audiowide;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  z-index: 1;
+  right: 0;
 }
-#sidenavCog{
-    text-decoration: none;
-    color: white;
-    top: 3.5vw;
-    left: 3vw;
-    position: absolute;
-    font-size: 30px;
-    transition: all 0.5s;
+#sidenavCog {
+  text-decoration: none;
+  color: white;
+  top: 3.5vw;
+  left: 3vw;
+  position: absolute;
+  font-size: 30px;
+  transition: all 0.5s;
 }
-#sidenavCog:hover{
-    text-decoration: none  !important;
-    color: rgb(139, 120, 120);
-    top: 1vw;
-    left: 2vw;
-    position: absolute;
-    font-size: 30px
+#sidenavCog:hover {
+  text-decoration: none !important;
+  color: rgb(139, 120, 120);
+  top: 1vw;
+  left: 2vw;
+  position: absolute;
+  font-size: 30px;
 }
 /*.headlinks{
     color:white;
     text-decoration: none;
 }*/
-#registerbutton{
-    width: 270px;
-    height: 60px;
+.registerbutton {
+  width: 270px;
+  height: 60px;
   position: relative;
   font-weight: 700;
   font-size: 30px;
@@ -59,21 +59,21 @@
   border-radius: 4px;
   text-transform: uppercase;
   outline: 0;
-  overflow:hidden;
+  overflow: hidden;
   background: none;
   z-index: 1;
   cursor: pointer;
-  transition:         0.08s ease-in;
-  -o-transition:      0.08s ease-in;
-  -ms-transition:     0.08s ease-in;
-  -moz-transition:    0.08s ease-in;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
   -webkit-transition: 0.08s ease-in;
 }
-#registerbutton:hover {
+.registerbutton:hover {
   color: black;
 }
 
-#registerbutton:before {
+.registerbutton:before {
   content: "";
   position: absolute;
   background: white;
@@ -86,7 +86,7 @@
   -webkit-transition: top 0.09s ease-in;
 }
 
-#registerbutton:hover:before {
+.registerbutton:hover:before {
   top: 0;
 }
 a:hover{
@@ -158,8 +158,8 @@ a:hover{
   text-align: left;
   margin-left: 28%;
 }
-@media (max-width: 1813px){
-  .main{
+@media (max-width: 1813px) {
+  .main {
     width: 100%;
   }
 }
