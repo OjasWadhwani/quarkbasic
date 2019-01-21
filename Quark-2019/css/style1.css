@@ -8,9 +8,7 @@
   background-position: center center;
   z-index: 1;
 }
-#large-header {
-  background-image: url("https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg");
-}
+
 .main-title {
   position: absolute;
   margin: 0;
@@ -61,6 +59,7 @@
   overflow: hidden;
   position: relative;
   border-bottom: 5px solid #00325a;
+  margin-bottom: 20px;
 }
 .our-team:hover{
   border-bottom: 5px solid #ffffff;

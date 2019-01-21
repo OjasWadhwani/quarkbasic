@@ -95,6 +95,14 @@ body{
 .fts:hover{
 	border:4px solid olive;
 }
+.kalamsat{
+	border: 2px solid black;
+	height: 100%;
+	-webkit-transition: all 0.3s;
+}
+.kalamsat:hover{
+	border:4px solid navy;
+}
 .blocks{
 
 
