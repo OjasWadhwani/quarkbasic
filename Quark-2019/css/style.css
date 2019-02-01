@@ -286,3 +286,43 @@ li{
     margin-right: 30%;
   }
 }
+
+.sponsors_row{
+	text-align: center;
+	padding-bottom: 8%;
+}
+
+.sponsors_column{
+	margin: 0 !important;
+	padding: 0 !important;
+	color: azure;
+	font-size: 20px;
+}
+.sponsors_img{
+	height: 300px;
+	width: 300px;
+}
+#princess{
+	padding-top: 20%;
+	padding-bottom: 23%;
+	height: 100%;
+	width: 300px;
+}
+#digitalocean{
+	padding-top: 28%;
+	padding-bottom: 28%;
+	height: 100%;
+	width: 300px;
+}
+#yantravat{
+	padding-top: 28%;
+	padding-bottom: 28%;
+	height: 100%;
+	width: 300px;
+}
+#techobytes{
+	padding-top: 28%;
+	padding-bottom: 28%;
+	height: 100%;
+	width: 300px;
+}
