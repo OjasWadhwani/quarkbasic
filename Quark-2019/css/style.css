@@ -326,3 +326,10 @@ li{
 	height: 100%;
 	width: 300px;
 }
+.media-links{
+	text-align: center;
+	font-size: 300%;
+	margin-top: 2%;
+	/*font-family: Roboto;*/
+	margin-bottom: 6%;	
+}
