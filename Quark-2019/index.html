@@ -1,207 +1,91 @@
-<!DOCTYPE html>
-<html lang="en" >
+<html>
+    <head>
+        <title>Quark-2019</title>
+        <link rel="stylesheet" type="text/css" href="./css/main-css.css">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <!--Social Media-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">	
+    </head>
+    <body>
+        
+        <div id="mySidebar" class="sidebar" style="scroll-behavior: auto">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="border: none;">&times;</a>
+            
+            <a href="about.html" data-toggle="modal" data-target="#about">About</a>
+            <a href="./events.html">Events</a>
+            <a href="./workshops/workshops.html">Workshops</a>
+            <a href="./team.html">Team</a>
+            <a href="./img/PaymentTutorial.pdf">Payment-Tutorial</a>
+            <a href="./qriosity.html">Qriosity</a>
+            <a href="./exhibitions/exhibitions.html">Exhibitions</a>
+            <a href="./gl.html">Guest Lectures</a>
+            <a href="sponsors.html">Sponsors</a>
+            <a href="matkaSponsors.html">Matka Sponsors</a>
 
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-
-  <title>Web developers</title>
-  <link rel="stylesheet" href="dev.css">
-  
-  <!-- Bootstrap core CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-  <link rel='stylesheet' href='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css'>
-
-      <link rel="stylesheet" href="css/style1.css">
-
-  
-</head>
-
-<body style="background-image: url('dev.jpg'); background-size: cover">
-
-  
-            <!--header-->
-            <header>
-            <div style="position:; font-size: 50px; color: white">
-                    <a href="../index.html" class="homebtn"><span class="fa fa-home" id="home" style="color: white"></span></a>
-            </div>
-                    <div style="color: white; font-size: 70px; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-shadow: 4px black;">
-                    Meet The Devs.
-            </div>
-        </header>
-        <br>
-        <br>
-
-        <!--Panels-->
-        <section class="our-team-section">
-            <div class="container" style="margin: auto">
-                <div class="row">
-                    <!--Ojas-->
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="css/ojas.jpg">
-                            </div>
-                            <div class="team-content">
-                                <h1 class="title">Ojas Wadhwani</h3>
-                                <span class="post">Web Developer</span>
-                            </div>
-                            <ul class="social">
-                                <li>
-                                    <a href="https://www.facebook.com/ojas.wadhwani.56"  target="_blank"class="fa fa-facebook"></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/ojas-wadhwani-99a14315a/" class="fa fa-linkedin"></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/OjasWadhwani" class="fa fa-github"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!--Chinmay-->
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="our-team">
-                                <div class="pic">
-                                    <img src="css/chinmay.jpg">
-                                </div>
-                                <div class="team-content">
-                                    <h1 class="title">Chinmay Gupta</h3>
-                                    <span class="post">Web Developer</span>
-                                </div>
-                                <ul class="social">
-                                    <li>
-                                        <a href="https://www.facebook.com/chinmay.gupta.146"  target="_blank"class="fa fa-facebook"></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/ChinmayGupta4" class="fa fa-twitter"></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/chinmay-gupta-b2b97bb3/" class="fa fa-linkedin"></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/Chinmay-Gupta" class="fa fa-github"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!--Aryan-->
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="css/aryan.jpg">
-                            </div>
-                            <div class="team-content">
-                                <h1 class="title">Aryan Agarwal</h3>
-                                <span class="post">Web Master</span>
-                            </div>
-                            <ul class="social">
-                                <li>
-                                    <a href="https://www.facebook.com/AryanAg15" class="fa fa-facebook"></a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/AryanAg15" class="fa fa-twitter"></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/aryan-agarwal-a9524812a" class="fa fa-linkedin"></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/aryanagarwal15" class="fa fa-github"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!--Rajath-->
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="css/rajath.jpg">
-                            </div>
-                            <div class="team-content">
-                                <h1 class="title">Rajath Reghunath</h3>
-                                <span class="post">Web Developer</span>
-                            </div>
-                            <ul class="social">
-                                <li>
-                                    <a href="https://www.facebook.com/rajath.reghunath" class="fa fa-facebook"></a>
-                                </li>
-                                
-                                <li>
-                                    <a href="https://www.linkedin.com/in/rajath-reghunath-4180b8163/" class="fa fa-linkedin"></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/rrgodhorus" class="fa fa-github"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="images/poojan.png">
-                            </div>
-                            <div class="team-content">
-                                <h1 class="title">Poojan Thaker</h3>
-                                <span class="post">Designer</span>
-                            </div>
-                            <ul class="social">
-                                
-                                
-                                <li>
-                                    <a href="https://www.linkedin.com/in/poojan-thaker-832a2229/" class="fa fa-linkedin"></a>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="our-team">
-                            <div class="pic">
-                                <img src="images/aditya.jpg">
-                            </div>
-                            <div class="team-content">
-                                <h1 class="title">Aditya Aryan</h3>
-                                <span class="post">Designer</span>
-                            </div>
-                            <ul class="social">
-                                
-                                
-                                
-                               
-                            </ul>
-                        </div>
+        
+            
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-5">
+                    <div class="logo">
+                        <img src="img/logo-min.png" width="150vw" style="margin-left:23%;">
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-3" style="color:black; margin-left: 1%; font-size: 18px ;font-family: Arial; text-align: center">
+                    <i>BITS Pilani, K.K Birla Goa Campus</i>
+                </div>
+            </div>
 
-        </section>
-        <div class="footer">
+            <div style="color: black; top: 20px; font-size: 15px; position: relative;  font-family: Arial; text-align: center">
+                    <a href="./devs.html" style="border:none;">Developers</a>
+                </div>
             
-                <b>Quark 2019</b>
-                <sub>1st to 3rd Feb</sub>
-        
+            
         </div>
+        <div id="main">
+            <!--Video-->
+            <div id="backvid-div">
+                <video autoplay loop muted id="backvid" >
+                    <source src="./backvid.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!--Main-->
+            <div class="content">
+                <div class="topbar">
+                    <button class="openbtn" id="openbtn" onclick="openNav()" style="border: 2px solid white; border-radius: 5px">&#9776;</button>
+                    <div class="social">
+                        <a href="https://www.facebook.com/bitsquark/" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/bitsquark" class="fa fa-twitter"></a>
+                        <a href="https://www.youtube.com/channel/UCqtrSV1VbseY2GPC0HhJphA" class="fa fa-youtube"></a>
+                        <a href="https://www.instagram.com/bitsquark/" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/company/quark-bits-pilani-goa/" class="fa fa-linkedin"></a>
+                        
+                    </div>
+                </div>
+                <div class="footer" style="font-family: 'Nunito', sans-serif; margin-bottom: 2%; text-align: center;">
+                    <h1 style="color: orange;">Quark-2019</h1><h4>1st to 3rd Feb</h4>
+                </div >
+                
+            </div>
+            
+            
+        </div>       
+    <script>
+        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("openbtn").style.display = "none";
+        }
 
-        
-    </div>
-
-    <!--Scripts for background-->
-    <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
-    <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
-    <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script>
-    <script  src="js/index.js"></script>
-
-
-
-
-</body>
-
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("openbtn").style.display = "inline-block";
+        } 
+    </script>
+    </body>
 </html>
